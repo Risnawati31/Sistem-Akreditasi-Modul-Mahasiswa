@@ -6,6 +6,9 @@
 <script src="../../plugins/input-mask/jquery.inputmask.js" type="text/javascript"></script>
 <script src="../../plugins/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
 <script src="../../plugins/input-mask/jquery.inputmask.extensions.js" type="text/javascript"></script>
+<script src="../../plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+<script src="../../plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+
 <!-- date-range-picker -->
 <script src="../../plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
 <!-- bootstrap color picker -->
@@ -25,6 +28,8 @@
 <!-- Page script -->
 <script type="text/javascript">
     $(function () {
+        $("#tablePersonalDetail").dataTable();
+
         //Datemask dd/mm/yyyy
         $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
         //Datemask2 mm/dd/yyyy

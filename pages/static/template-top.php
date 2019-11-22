@@ -14,6 +14,9 @@
     <link href="../../plugins/iCheck/all.css" rel="stylesheet" type="text/css" />
     <!-- Bootstrap Color Picker -->
     <link href="../../plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet"/>
+    
+     <link href="../../plugins/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+
     <!-- Bootstrap time Picker -->
     <link href="../../plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet"/>
     <!-- Theme style -->
