@@ -24,11 +24,6 @@
 				$_SESSION['page'] = "kelola";
 				$_SESSION['subpage'] = "leadership-experience";
 				break;
-			case 'kelola-pengabdian-masyarakat':
-				header('location:pages/kelola-data/pengabdian-masyarakat.php');
-				$_SESSION['page'] = "kelola";
-				$_SESSION['subpage'] = "pengabdian-masyarakat";
-				break;
 			case 'kelola-project-experience':
 				header('location:pages/kelola-data/project-experience.php');
 				$_SESSION['page'] = "kelola";

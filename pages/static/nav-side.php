@@ -55,13 +55,6 @@
               }
             ?>
             <?php
-              if($_SESSION['subpage']=='pengabdian-masyarakat') {
-                echo "<li class='active'><a href='../../connector.php?page=kelola-pengabdian-masyarakat'><i class='fa fa-circle-o'></i> Data Pengabdian Masyarakat</a></li>";
-              } else { 
-                echo "<li><a href='../../connector.php?page=kelola-pengabdian-masyarakat'><i class='fa fa-circle-o'></i> Data Pengabdian Masyarakat</a></li>";
-              }
-            ?>
-            <?php
               if($_SESSION['subpage']=='leadership-experience') {
                 echo "<li class='active'><a href='../../connector.php?page=kelola-leadership-experience'><i class='fa fa-circle-o'></i> Data Leadership Experience</a></li>";
               } else { 

@@ -32,7 +32,7 @@
 	<div class="wrapper">
 		<header class="main-header">
 		  <!-- Logo -->
-		  <a href="index.php" class="logo"><b>Admin</b> PKM</a>
+		  <a href="index.php" class="logo"><b>Admin</b> MHS</a>
 		  <!-- Header Navbar: style can be found in header.less -->
 		  <nav class="navbar navbar-static-top" role="navigation">
 		    <!-- Sidebar toggle button-->
@@ -45,7 +45,7 @@
 		        <li class="dropdown user user-menu">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 		            <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-		            <span class="hidden-xs">Fulan Fulan</span>
+		            <span class="hidden-xs">Ahlijati Nuraminah</span>
 		          </a>
 		          <ul class="dropdown-menu">
 		            <!-- User image -->
@@ -55,18 +55,6 @@
 		                Fulan Fulan - Web Developer
 		                <small>Member since Nov. 2012</small>
 		              </p>
-		            </li>
-		            <!-- Menu Body -->
-		            <li class="user-body">
-		              <div class="col-xs-4 text-center">
-		                <a href="#">Followers</a>
-		              </div>
-		              <div class="col-xs-4 text-center">
-		                <a href="#">Sales</a>
-		              </div>
-		              <div class="col-xs-4 text-center">
-		                <a href="#">Friends</a>
-		              </div>
 		            </li>
 		            <!-- Menu Footer-->
 		            <li class="user-footer">
@@ -90,7 +78,7 @@
 		        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
 		      </div>
 		      <div class="pull-left info">
-		        <p>Fulan Fulan</p>
+		        <p>Ahlijati Nuraminah</p>
 		        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
 		      </div>
 		    </div>
@@ -117,7 +105,6 @@
 		        <ul class="treeview-menu">
 		          <li><a href="connector.php?page=kelola-education"><i class="fa fa-circle-o"></i> Data Education</a></li>
 		          <li><a href="connector.php?page=kelola-project-experience"><i class="fa fa-circle-o"></i> Data Project Experience</a></li>
-
 		          <li><a href="connector.php?page=kelola-leadership-experience"><i class="fa fa-circle-o"></i> Data Leadership Experience</a></li>
 		          <li><a href="connector.php?page=kelola-personal-details"><i class="fa fa-circle-o"></i> Data Personal Details</a></li>
 		        </ul>
