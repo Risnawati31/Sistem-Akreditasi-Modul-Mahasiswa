@@ -21,6 +21,9 @@
 	    		else if($_SESSION['subpage']=='personal-details') {
 	    			echo "Kelola Data Personal Details";
 	    		}
+	    		else if($_SESSION['subpage']=='writing-experience') {
+	    			echo "Kelola Data Writing Experience";
+	    		}
 	    	}
 	    	else if($_SESSION['page']=='education') {
 	    		echo "Education";
@@ -37,6 +40,10 @@
 	    	else if($_SESSION['page']=='project-experience') {
 	    		echo "Project Experience";
 	    	}
+	    	else if($_SESSION['page']=='writing-experience') {
+	    		echo "Writing Experience";
+	    	}
+
 	    } else {
 	    	echo "Dashboard";
 	    }
@@ -79,6 +86,9 @@
 	    	}
 	    	else if($_SESSION['page']=='project-experience') {
 	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Project Experience</li>";
+	    	}
+	    	else if($_SESSION['page']=='writing-experience') {
+	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Writing Experience</li>";
 	    	}
 	    	
 	    } else {

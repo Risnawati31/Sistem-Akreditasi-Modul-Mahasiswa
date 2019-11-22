@@ -68,6 +68,13 @@
                 echo "<li><a href='../../connector.php?page=kelola-leadership-experience'><i class='fa fa-circle-o'></i> Data Leadership Experience</a></li>";
               }
             ?>
+             <?php
+              if($_SESSION['subpage']=='writing-experience') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-writing-experience'><i class='fa fa-circle-o'></i> Data Writing Experience</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-writing-experience'><i class='fa fa-circle-o'></i> Data Writing Experience</a></li>";
+              }
+            ?>
             <?php
               if($_SESSION['subpage']=='personal-details') {
                 echo "<li class='active'><a href='../../connector.php?page='kelola-personal-details'><i class='fa fa-circle-o'></i> Data Personal Details</a></li>";

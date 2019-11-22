@@ -13,10 +13,11 @@
               <table id="tablePersonalDetail" class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Address</th>
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Jurusan</th>
                     <th>Phone</th>
+                    <th>Address</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -60,79 +61,87 @@
           </div><!-- /.box -->
         </div><!-- /.col -->
 
-       <div id="modalAdd" class="modal fade" role="dialog">
-	  		<div class="modal-dialog">
-		        <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-			        <h4 class="modal-title">Add Person</h4>
-			      </div>
-			      <div class="modal-body">
-			        <div class="form-group">
-                      <label>Nama</label>
-                      <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
-                    </div>
+     <div id="modalAdd" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Edit Person</h4>
+          </div>
+          <div class="modal-body">
+             <div class="form-group">
+                <label>NIM</label>
+                <input type="text" class="form-control" name="nim" placeholder="Masukan NIM">
+             </div>
 
-                    <div class="form-group">
-                      <label>Email</label>
-                      <input type="email" class="form-control" name="email" placeholder="email@mail.com">
-                    </div>
+             <div class="form-group">
+                <label>Nama</label>
+                <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
+              </div>
 
-                    <div class="form-group">
-                      <label>Address</label>
-                      <textarea type="text" class="form-control" name="Address" placeholder="Masukan Alamat"></textarea>
-                    </div>
+              <div class="form-group">
+                <label>Jurusan</label>
+                <input type="text" class="form-control" name="jurusan" placeholder="Masukan Jurusan">
+              </div>
 
-                     <div class="form-group">
-                      <label>Phone</label>
-                      <input type="number" class="form-control" name="phone" placeholder="Masukan Nomor HP">
-                    </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="number" class="form-control" name="phone" placeholder="Masukan Nomor HP">
+              </div>
 
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-			        <button type="button" class="btn btn-primary">Simpan</button>
-			      </div>
-			    </div>
+              <div class="form-group">
+                <label>Alamat</label>
+                <textarea type="text" class="form-control" name="alamat" placeholder="Masukan Alamat"></textarea>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalEdit" class="modal fade" role="dialog">
+  		<div class="modal-dialog">
+	        <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		        <h4 class="modal-title">Edit Person</h4>
+		      </div>
+		      <div class="modal-body">
+             <div class="form-group">
+                <label>NIM</label>
+                <input type="text" class="form-control" name="nim" placeholder="Masukan NIM">
+             </div>
+
+             <div class="form-group">
+                <label>Nama</label>
+                <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
+              </div>
+
+              <div class="form-group">
+                <label>Jurusan</label>
+                <input type="text" class="form-control" name="jurusan" placeholder="Masukan Jurusan">
+              </div>
+
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="number" class="form-control" name="phone" placeholder="Masukan Nomor HP">
+              </div>
+
+              <div class="form-group">
+                <label>Alamat</label>
+                <textarea type="text" class="form-control" name="alamat" placeholder="Masukan Alamat"></textarea>
+              </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+		        <button type="button" class="btn btn-primary">Simpan</button>
+		      </div>
 		    </div>
-	    </div>
-
-        <div id="modalEdit" class="modal fade" role="dialog">
-	  		<div class="modal-dialog">
-		        <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-			        <h4 class="modal-title">Edit Person</h4>
-			      </div>
-			      <div class="modal-body">
-			        <div class="form-group">
-                      <label>Nama</label>
-                      <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
-                    </div>
-
-                    <div class="form-group">
-                      <label>Email</label>
-                      <input type="email" class="form-control" name="email" placeholder="email@mail.com">
-                    </div>
-
-                    <div class="form-group">
-                      <label>Address</label>
-                      <textarea type="text" class="form-control" name="Address" placeholder="Masukan Alamat"></textarea>
-                    </div>
-
-                     <div class="form-group">
-                      <label>Phone</label>
-                      <input type="number" class="form-control" name="phone" placeholder="Masukan Nomor HP">
-                    </div>
-
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-			        <button type="button" class="btn btn-primary">Simpan</button>
-			      </div>
-			    </div>
-		    </div>
-	    </div>
+      </div>
+    </div>
 
 		<div id="modalDelete" class="modal modal-danger fade" role="dialog">
 	  		<div class="modal-dialog">
