@@ -12,8 +12,8 @@
 	    		else if($_SESSION['subpage']=='project-experience') {
 	    			echo "Kelola Data Project Experience";
 	    		}
-	    		else if($_SESSION['subpage']=='skill') {
-	    			echo "Kelola Data Skill";
+	    		else if($_SESSION['subpage']=='skill-experience') {
+	    			echo "Kelola Data Skill Experience";
 	    		}
 	    		else if($_SESSION['subpage']=='leadership-experience') {
 	    			echo "Kelola Data Leadership Experience";
@@ -28,8 +28,8 @@
 	    	else if($_SESSION['page']=='education') {
 	    		echo "Education";
 	    	}
-	    	else if($_SESSION['page']=='skill') {
-	    		echo "Skill";
+	    	else if($_SESSION['page']=='skill-experience') {
+	    		echo "Skill Experience";
 	    	}
 	    	else if($_SESSION['page']=='leadership-experience') {
 	    		echo "Leadership Experience";
@@ -62,8 +62,8 @@
 	    		else if($_SESSION['subpage']=='project-experience') {
 	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Project Experience</li>";
 	    		}
-	    		else if($_SESSION['subpage']=='skill') {
-	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Skill</li>";
+	    		else if($_SESSION['subpage']=='skill-experience') {
+	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Skill Experience</li>";
 	    		}
 	    		else if($_SESSION['subpage']=='leadership-experience') {
 	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Leadership Experience</li>";
@@ -71,12 +71,15 @@
 	    		else if($_SESSION['subpage']=='personal-details') {
 	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Personal Details</li>";
 	    		}
+	    		else if($_SESSION['subpage']=='writing-experience') {
+	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Writing Experience</li>";
+	    		}
 	    	}
 	    	else if($_SESSION['page']=='education') {
 	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Education</li>";
 	    	}
-	    	else if($_SESSION['page']=='skill') {
-	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Skill</li>";
+	    	else if($_SESSION['page']=='skill-experience') {
+	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Skill Experience</li>";
 	    	}
 	    	else if($_SESSION['page']=='leadership-experience') {
 	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Leadership Experience</li>";

@@ -107,6 +107,8 @@
 		          <li><a href="connector.php?page=kelola-project-experience"><i class="fa fa-circle-o"></i> Data Project Experience</a></li>
 		          <li><a href="connector.php?page=kelola-leadership-experience"><i class="fa fa-circle-o"></i> Data Leadership Experience</a></li>
 		          <li><a href="connector.php?page=kelola-personal-details"><i class="fa fa-circle-o"></i> Data Personal Details</a></li>
+		          <li><a href="connector.php?page=kelola-writing-experience"><i class="fa fa-circle-o"></i> Data Writing Experience</a></li>
+		          <li><a href="connector.php?page=kelola-skill-experience"><i class="fa fa-circle-o"></i> Data Skill Experience</a></li>
 		        </ul>
 		      </li>
 		    </ul>

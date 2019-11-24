@@ -41,6 +41,13 @@
           </a>
           <ul class="treeview-menu">
             <?php
+              if($_SESSION['subpage']=='personal-details') {
+                echo "<li class='active'><a href='../../connector.php?page='kelola-personal-details'><i class='fa fa-circle-o'></i> Data Personal Details</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-personal-details'><i class='fa fa-circle-o'></i> Data Personal Details</a></li>";
+              }
+            ?>
+            <?php
               if($_SESSION['subpage']=='education') {
                 echo "<li class='active'><a href='../../connector.php?page=kelola-education'><i class='fa fa-circle-o'></i> Data Education</a></li>";
               } else { 
@@ -69,12 +76,13 @@
               }
             ?>
             <?php
-              if($_SESSION['subpage']=='personal-details') {
-                echo "<li class='active'><a href='../../connector.php?page='kelola-personal-details'><i class='fa fa-circle-o'></i> Data Personal Details</a></li>";
+              if($_SESSION['subpage']=='skill-experience') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-skill-experience'><i class='fa fa-circle-o'></i> Data Skill Experience</a></li>";
               } else { 
-                echo "<li><a href='../../connector.php?page=kelola-personal-details'><i class='fa fa-circle-o'></i> Data Personal Details</a></li>";
+                echo "<li><a href='../../connector.php?page=kelola-skill-experience'><i class='fa fa-circle-o'></i> Data Skill Experience</a></li>";
               }
             ?>
+            
           </ul>
         </li>
         <?php

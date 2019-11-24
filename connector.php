@@ -34,16 +34,11 @@
 				$_SESSION['page'] = "kelola";
 				$_SESSION['subpage'] = "writing-experience";
 				break;
-			case 'kelola-prestasi-mahasiswa':
-				header('location:pages/kelola-data/prestasi-mahasiswa.php');
+			case 'kelola-skill':
+				header('location:pages/kelola-data/skill.php');
 				$_SESSION['page'] = "kelola";
-				$_SESSION['subpage'] = "prestasi-mahasiswa";
+				$_SESSION['subpage'] = "skill";
 				break;
-			case 'kelola-personal-details':
-				header('location:pages/public/personal-details.php');
-				$_SESSION['page'] = "personal-details";
-				$_SESSION['subpage'] = "";
-				break;			
 			case 'blog':
 				header('location:pages/public/blog.php');
 				$_SESSION['page'] = "dashboard";
