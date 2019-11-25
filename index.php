@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Penelitian dan Pengabdian</title>
+    <title>Modul Mahasiswa</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
@@ -109,6 +109,8 @@
 		          <li><a href="connector.php?page=kelola-personal-details"><i class="fa fa-circle-o"></i> Data Personal Details</a></li>
 		          <li><a href="connector.php?page=kelola-writing-experience"><i class="fa fa-circle-o"></i> Data Writing Experience</a></li>
 		          <li><a href="connector.php?page=kelola-skill-experience"><i class="fa fa-circle-o"></i> Data Skill Experience</a></li>
+		          <li><a href="connector.php?page=kelola-research-outcome"><i class="fa fa-circle-o"></i> Data Research Outcome</a></li>
+		          <li><a href="connector.php?page=kelola-professional-certification"><i class="fa fa-circle-o"></i> Data Professional Certification</a></li>
 		        </ul>
 		      </li>
 		    </ul>

@@ -76,12 +76,27 @@
               }
             ?>
              <?php
+              if($_SESSION['subpage']=='research-outcome') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-research-outcome'><i class='fa fa-circle-o'></i> Data Research Outcome</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-research-outcome'><i class='fa fa-circle-o'></i> Data Research Outcome </a></li>";
+              }
+            ?>
+            <?php
+              if($_SESSION['subpage']=='professional-certification') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-professional-certification'><i class='fa fa-circle-o'></i> Data Professional Certification</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-professional-certification'><i class='fa fa-circle-o'></i> Data Professional Certification </a></li>";
+              }
+            ?>
+             <?php
               if($_SESSION['subpage']=='skill-experience') {
                 echo "<li class='active'><a href='../../connector.php?page=kelola-skill-experience'><i class='fa fa-circle-o'></i> Data Skill Experience</a></li>";
               } else { 
                 echo "<li><a href='../../connector.php?page=kelola-skill-experience'><i class='fa fa-circle-o'></i> Data Skill Experience</a></li>";
               }
             ?>
+
             
           </ul>
         </li>

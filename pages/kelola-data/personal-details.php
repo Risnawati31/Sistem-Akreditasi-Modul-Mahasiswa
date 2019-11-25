@@ -10,7 +10,7 @@
 	          </div>
             </div><!-- /.box-header -->
             <div class="box-body">
-              <table id="tablePersonalDetail" class="table table-bordered table-striped">
+              <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
                     <th>NIM</th>
@@ -23,10 +23,11 @@
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td>Zul</td>
-                        <td>thomashardy@mail.com</td>
-						<td>89 Chiaroscuro Rd, Portland, USA</td>
+                    	  <td>1710130000</td>
+                        <td>Zul</td>
+					             	<td>Ilmu Komputer</td>
                         <td>(171) 555-2222</td>
+                        <td>89 Chiaroscuro Rd, Portland, USA</td>                        
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -34,10 +35,11 @@
                         </td>
                 	</tr>
                 	<tr>
-                    	<td>Budi</td>
-                        <td>thomashardy@mail.com</td>
-						<td>89 Chiaroscuro Rd, Portland, USA</td>
+                        <td>1710130000</td>
+                    	  <td>Budi</td>
+                        <td>Ilmu Komputer</td>
                         <td>(171) 555-2222</td>
+						            <td>89 Chiaroscuro Rd, Portland, USA</td>                        
                         <td>
                          	<a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -45,10 +47,11 @@
                         </td>
                 	</tr>
                 	<tr>
-                    	<td>Harpy</td>
-                        <td>thomashardy@mail.com</td>
-						<td>89 Chiaroscuro Rd, Portland, USA</td>
+                        <td>1710130000</td>
+                    	  <td>Harpy</td>
+                        <td>Ilmu Komputer</td>
                         <td>(171) 555-2222</td>
+						            <td>89 Chiaroscuro Rd, Portland, USA</td>                        
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 

@@ -10,20 +10,20 @@
 	          </div>
             </div><!-- /.box-header -->
             <div class="box-body">
-              <table id="tablePersonalDetail" class="table table-bordered table-striped">
+              <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
                     <th>Nama</th>
                     <th>Tahun</th>
                     <th>Kota</th>
-                    <th>Address</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td>SMA T DARUL'AMAL</td>
+                    	  <td>SMA T DARUL'AMAL</td>
                         <td>2017</td>
-						<td>Sukabumi</td>
+					             	<td>Sukabumi</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -31,9 +31,9 @@
                         </td>
                 	</tr>
                 	<tr>
-                    	<td>SMA T DARUL'AMAL</td>
+                      	<td>SMA T DARUL'AMAL</td>
                         <td>2017</td>
-						<td>Sukabumi</td>
+						            <td>Sukabumi</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -41,9 +41,9 @@
                         </td>
                 	</tr>
                 	<tr>
-                    	<td>SMA T DARUL'AMAL</td>
+                    	  <td>SMA T DARUL'AMAL</td>
                         <td>2017</td>
-						<td>Sukabumi</td>
+						            <td>Sukabumi</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 

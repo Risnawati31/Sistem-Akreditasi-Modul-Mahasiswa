@@ -1,4 +1,5 @@
 <?php include '../static/top.php'; ?>
+</br>
   <section class="content">
       <div class="row">
         <div class="col-xs-12">
@@ -10,12 +11,12 @@
 	          </div>
             </div><!-- /.box-header -->
             <div class="box-body">
-              <table id="tablePersonalDetail" class="table table-bordered table-striped">
+              <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
                     <th>Nama Skills</th>
                     <th>Nama Tools</th>
-                    <th>Address</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>

@@ -21,6 +21,15 @@
 	    		else if($_SESSION['subpage']=='writing-experience') {
 	    			echo "Kelola Data Writing Experience";
 	    		}
+	    		else if($_SESSION['subpage']=='research-outcome') {
+	    			echo "Kelola Data Research Outcome";
+	    		}
+	    		else if($_SESSION['subpage']=='professional-certification') {
+	    			echo "Kelola Data Professional Certification";
+	    		}
+	    		else if($_SESSION['subpage']=='skill-experience') {
+	    			echo "Kelola Data Skill Experience";
+	    		}
 	    	}
 	    	else if($_SESSION['page']=='education') {
 	    		echo "Education";
@@ -36,6 +45,15 @@
 	    	}
 	    	else if($_SESSION['page']=='writing-experience') {
 	    		echo "Writing Experience";
+	    	}
+	    	else if($_SESSION['page']=='research-outcome') {
+	    		echo "Research Outcome";
+	    	}
+	    	else if($_SESSION['page']=='professional-certification') {
+	    		echo "Professional Certification";
+	    	}
+	    	else if($_SESSION['page']=='skill-experience') {
+	    		echo "Skill Experience";
 	    	}
 
 	    } else {
@@ -68,6 +86,12 @@
 	    		else if($_SESSION['subpage']=='skill-experience') {
 	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Skill Experience</li>";
 	    		}
+	    		else if($_SESSION['subpage']=='research-outcome') {
+	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Research Outcome</li>";
+	    		}
+	    		else if($_SESSION['subpage']=='professional-certification') {
+	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Professional Certification</li>";
+	    		}
 	    	}
 	    	else if($_SESSION['page']=='education') {
 	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Education</li>";
@@ -86,6 +110,12 @@
 	    	}
 	    	else if($_SESSION['page']=='skill-experience') {
 	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Skill Experience</li>";
+	    	}
+	    	else if($_SESSION['page']=='research-outcome') {
+	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Research Outcome</li>";
+	    	}
+	    	else if($_SESSION['page']=='professional-certification') {
+	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>professional-certification</li>";
 	    	}
 	    	
 	    } else {
