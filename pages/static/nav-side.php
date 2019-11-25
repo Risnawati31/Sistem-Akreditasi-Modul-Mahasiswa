@@ -75,7 +75,7 @@
                 echo "<li><a href='../../connector.php?page=kelola-writing-experience'><i class='fa fa-circle-o'></i> Data Writing Experience</a></li>";
               }
             ?>
-            <?php
+             <?php
               if($_SESSION['subpage']=='skill-experience') {
                 echo "<li class='active'><a href='../../connector.php?page=kelola-skill-experience'><i class='fa fa-circle-o'></i> Data Skill Experience</a></li>";
               } else { 

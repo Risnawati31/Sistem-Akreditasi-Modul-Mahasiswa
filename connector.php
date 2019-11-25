@@ -34,10 +34,10 @@
 				$_SESSION['page'] = "kelola";
 				$_SESSION['subpage'] = "writing-experience";
 				break;
-			case 'kelola-skill':
-				header('location:pages/kelola-data/skill.php');
+			case 'kelola-skill-experience':
+				header('location:pages/kelola-data/skill-experience.php');
 				$_SESSION['page'] = "kelola";
-				$_SESSION['subpage'] = "skill";
+				$_SESSION['subpage'] = "skill-experience";
 				break;
 			case 'blog':
 				header('location:pages/public/blog.php');
