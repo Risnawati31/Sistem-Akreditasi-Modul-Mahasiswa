@@ -30,6 +30,12 @@
 	    		else if($_SESSION['subpage']=='skill-experience') {
 	    			echo "Kelola Data Skill Experience";
 	    		}
+				else if($_SESSION['subpage']=='working-internship') {
+	    			echo "Kelola Data Working Internship";
+	    		}
+				else if($_SESSION['subpage']=='training-workshop-seminar') {
+	    			echo "Kelola Training,Workshop,Seminar";
+	    		}
 	    	}
 	    	else if($_SESSION['page']=='education') {
 	    		echo "Education";
@@ -54,6 +60,12 @@
 	    	}
 	    	else if($_SESSION['page']=='skill-experience') {
 	    		echo "Skill Experience";
+	    	}
+			else if($_SESSION['page']=='working-internship') {
+	    		echo "Working Internship";
+	    	}
+			else if($_SESSION['page']=='training-workshop-seminar') {
+	    		echo "Training,Workshop,Seminar";
 	    	}
 
 	    } else {
@@ -92,6 +104,12 @@
 	    		else if($_SESSION['subpage']=='professional-certification') {
 	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Professional Certification</li>";
 	    		}
+				else if($_SESSION['subpage']=='working-internship') {
+	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Working Internship</li>";
+	    		}
+				else if($_SESSION['subpage']=='training-workshop-seminar') {
+	    			echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li>Kelola Data</li><li class='active'>Training,Workshop,Seminar</li>";
+	    		}
 	    	}
 	    	else if($_SESSION['page']=='education') {
 	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>Education</li>";
@@ -116,6 +134,12 @@
 	    	}
 	    	else if($_SESSION['page']=='professional-certification') {
 	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>professional-certification</li>";
+	    	}
+			else if($_SESSION['page']=='working-internship') {
+	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>working-internship</li>";
+	    	}
+			else if($_SESSION['page']=='training-workshop-seminar') {
+	    		echo "<li><a href='../../connector.php?page=dashboard'><i class='fa fa-dashboard'></i> Dashboard</a></li><li class='active'>training-workshop-seminar</li>";
 	    	}
 	    	
 	    } else {

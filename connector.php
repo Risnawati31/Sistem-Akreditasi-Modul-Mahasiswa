@@ -49,6 +49,16 @@
 				$_SESSION['page'] = "kelola";
 				$_SESSION['subpage'] = "skill-experience";
 				break;
+			case 'kelola-working-internship':
+				header('location:pages/kelola-data/working-internship.php');
+				$_SESSION['page'] = "kelola";
+				$_SESSION['subpage'] = "working-internship";
+				break;
+			case 'kelola-training-workshop-seminar':
+				header('location:pages/kelola-data/training-workshop-seminar.php');
+				$_SESSION['page'] = "kelola";
+				$_SESSION['subpage'] = "training-workshop-seminar";
+				break;
 			
 			default:
 				echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";

@@ -96,6 +96,20 @@
                 echo "<li><a href='../../connector.php?page=kelola-skill-experience'><i class='fa fa-circle-o'></i> Data Skill Experience</a></li>";
               }
             ?>
+			 <?php  
+              if($_SESSION['subpage']=='working-internship') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-working-internship'><i class='fa fa-circle-o'></i> Data Working & internship</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-working-internship'><i class='fa fa-circle-o'></i> Data Working & internship</a></li>";
+              }
+            ?>
+			 <?php  
+              if($_SESSION['subpage']=='training-workshop-seminar') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-training-workshop-seminar'><i class='fa fa-circle-o'></i> Training,Workshop,Seminar</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-training-workshop-seminar'><i class='fa fa-circle-o'></i> Training,Workshop,Seminar</a></li>";
+              }
+            ?>
 
             
           </ul>

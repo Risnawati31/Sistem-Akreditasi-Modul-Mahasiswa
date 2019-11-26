@@ -111,6 +111,8 @@
 		          <li><a href="connector.php?page=kelola-skill-experience"><i class="fa fa-circle-o"></i> Data Skill Experience</a></li>
 		          <li><a href="connector.php?page=kelola-research-outcome"><i class="fa fa-circle-o"></i> Data Research Outcome</a></li>
 		          <li><a href="connector.php?page=kelola-professional-certification"><i class="fa fa-circle-o"></i> Data Professional Certification</a></li>
+				  <li><a href="connector.php?page=kelola-working-internship"><i class="fa fa-circle-o"></i> Data Working Internship</a></li>
+				  <li><a href="connector.php?page=kelola-training-workshop-seminar"><i class="fa fa-circle-o"></i> Training,Workshop,Seminar</a></li>
 		        </ul>
 		      </li>
 		    </ul>
