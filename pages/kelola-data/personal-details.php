@@ -6,7 +6,7 @@
             <div class="box-header">
               <h3 class="box-title">Personal Details</h3>
               <div class="pull-right box-tools">
-	            	<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Person</button>
+                <a href="form-personal-details.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Person</button></a>
 	          </div>
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -32,6 +32,8 @@
                           <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
                           <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
+
+                          <a href="print-cv-mahasiswa.php"><button class="btn btn-primary btn-md"><i class="fa fa-print"> </i> Print</button></a>
                       </td>
                 	</tr>
                 	<tr>
@@ -44,6 +46,8 @@
                           <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
                           <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
+
+                          <a href="form-personal-details.php"><button class="btn btn-primary btn-md"><i class="fa fa-print"> </i> Print</button></a>
                       </td>
                   </tr>
                 	<tr>
@@ -56,6 +60,8 @@
                           <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
                           <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
+
+                          <a href="form-personal-details.php"><button class="btn btn-primary btn-md"><i class="fa fa-print"> </i> Print</button></a>
                       </td>
                   </tr>
                 </tbody>
@@ -140,7 +146,7 @@
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-		        <button type="button" class="btn btn-primary">Simpan</button>
+            <a href="form-personal-details.php"><button class="btn btn-primary btn-md"><i class="fa fa-search"> </i> Show Full Form</button></a>
 		      </div>
 		    </div>
       </div>

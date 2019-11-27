@@ -7,7 +7,7 @@
               <h3 class="box-title">Personal Details</h3>
               <div class="pull-right box-tools">
                 <!-- <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Writing Experience</button> -->
-                <a href="add-writing-experience.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Writing Experience</button></a>
+                <a href="form-writing-experience.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Writing Experience</button></a>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -25,7 +25,7 @@
                       <td>Ahlijati Nuraimah</td>
                       <td>
                           <!-- <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a> -->
-                         <a href="add-writing-experience.php"><button class="btn btn-warning btn-md"><i class="fa fa-edit"> </i> Edit </button></a>
+                         <a href="form-writing-experience.php"><button class="btn btn-warning btn-md"><i class="fa fa-edit"> </i> Edit </button></a>
 
 
                           <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
@@ -35,7 +35,7 @@
                       <td>Inovasi Tehnologi di Bidang Perikanan</td>
                       <td>Ahlijati Nuraimah</td>
                       <td>
-                          <a href="add-writing-experience.php"><button class="btn btn-warning btn-md"><i class="fa fa-edit"> </i> Edit </button></a>
+                          <a href="form-writing-experience.php"><button class="btn btn-warning btn-md"><i class="fa fa-edit"> </i> Edit </button></a>
 
 
                           <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
@@ -45,7 +45,7 @@
                       <td>Inovasi Tehnologi di Bidang Perumahan</td>
                       <td>Ahlijati Nuraimah</td>
                       <td>
-                          <a href="add-writing-experience.php"><button class="btn btn-warning btn-md"><i class="fa fa-edit"> </i> Edit </button></a>
+                          <a href="form-writing-experience.php"><button class="btn btn-warning btn-md"><i class="fa fa-edit"> </i> Edit </button></a>
 
                           <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
                       </td>

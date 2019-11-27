@@ -9,6 +9,7 @@
 <script src="../../plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
 <script src="../../plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
 
+<script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- date-range-picker -->
 <script src="../../plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
 <!-- bootstrap color picker -->
@@ -29,6 +30,11 @@
 <script type="text/javascript">
     $(function () {
         $("#tablePersonalDetail").dataTable();
+
+         $('#datepicker').datepicker({
+          autoclose: true
+        })
+
 
         //Datemask dd/mm/yyyy
         $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
