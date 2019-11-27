@@ -24,7 +24,7 @@
                 <tbody>
                 	<tr>
                     	  <td>1710130000</td>
-                        <td>Zul</td>
+                        <td><a href="print-cv-mahasiswa.php">Iwan</td>
 					             	<td>Ilmu Komputer</td>
                         <td>(171) 555-2222</td>
                         <td>89 Chiaroscuro Rd, Portland, USA</td>                        
