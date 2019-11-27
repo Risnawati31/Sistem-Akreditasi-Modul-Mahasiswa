@@ -4,25 +4,23 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">List Education</h3>
+              <h3 class="box-title">List Training, Seminar, Workshop</h3>
               <div class="pull-right box-tools">
-                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Education</button>
+                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Kegiatan</button>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
-              <table class="table table-bordered table-striped">
+              <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th>Nama</th>
-                    <th></th>
+                    <th colspan="8">Nama</th>
                     <th>Posisi</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                        <td>Amazing You</td>
-                        <td></td>
+                        <td colspan="8">Amazing You</td>
                         <td>Panitia</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
@@ -31,8 +29,7 @@
                         </td>
                   </tr>
                   <tr>
-                        <td>Github Workshop</td>
-                        <td></td>
+                        <td colspan="8">Github Workshop</td>
                         <td>Peserta</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
@@ -41,8 +38,7 @@
                         </td>
                   </tr>
                   <tr>
-                        <td>Techtalk</td>
-                        <td></td>
+                        <td colspan="8">Techtalk</td>
                         <td>Panitia</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
@@ -61,23 +57,18 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Add Education</h4>
+            <h4 class="modal-title">Add Training/Seminar/Workshop</h4>
           </div>
           <div class="modal-body">
 
              <div class="form-group">
-                <label>Nama</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
+                <label>Nama Kegiatan</label>
+                <input type="text" class="form-control" name="name" placeholder="Masukan Nama Kegiatan">
               </div>
 
               <div class="form-group">
-                <label>Tahun</label>
-                <input type="text" class="form-control" name="tahun" placeholder="Masukan Tahun">
-              </div>
-
-              <div class="form-group">
-                <label>Kota</label>
-                <input type="text" class="form-control" name="kota" placeholder="Masukan Kota">
+                <label>Posisi</label>
+                <input type="text" class="form-control" name="tahun" placeholder="Masukan Peran anda dalam acara">
               </div>
           </div>
           <div class="modal-footer">
@@ -93,22 +84,17 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Edit Education</h4>
+            <h4 class="modal-title">Edit Training/Seminar/Workshop</h4>
           </div>
           <div class="modal-body">
              <div class="form-group">
-                <label>Nama</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
+                <label>Nama Kegiatan</label>
+                <input type="text" class="form-control" name="name" placeholder="Masukan Nama Kegiatan">
               </div>
 
               <div class="form-group">
-                <label>Tahun</label>
-                <input type="text" class="form-control" name="tahun" placeholder="Masukan Tahun">
-              </div>
-
-              <div class="form-group">
-                <label>Kota</label>
-                <input type="text" class="form-control" name="kota" placeholder="Masukan Kota">
+                <label>Posisi</label>
+                <input type="text" class="form-control" name="tahun" placeholder="Masukan Peran dalam acara">
               </div>
           </div>
           <div class="modal-footer">
