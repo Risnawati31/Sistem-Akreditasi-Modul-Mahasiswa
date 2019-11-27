@@ -274,7 +274,7 @@ $(document).ready(function(){
             </div>
             <table class="table table-striped table-hover">
                 <thead>
-                    <tr> //start new slot
+                    <tr>
             <th>
               <span class="custom-checkbox">
                 <input type="checkbox" id="selectAll">
@@ -286,7 +286,7 @@ $(document).ready(function(){
             <th> </th>
                         <th>Posisi</th>
                         <th> </th>
-                    </tr> //end slot
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
