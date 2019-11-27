@@ -32,7 +32,7 @@
 	<div class="wrapper">
 		<header class="main-header">
 		  <!-- Logo -->
-		  <a href="index.php" class="logo"><b>Admin</b> MHS</a>
+		  <a href="index.php" class="logo"><b>Mahasiswa</b></a>
 		  <!-- Header Navbar: style can be found in header.less -->
 		  <nav class="navbar navbar-static-top" role="navigation">
 		    <!-- Sidebar toggle button-->
@@ -45,7 +45,7 @@
 		        <li class="dropdown user user-menu">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 		            <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-		            <span class="hidden-xs">Ahlijati Nuraminah</span>
+		            <span class="hidden-xs">Iwan Sinanto Ate</span>
 		          </a>
 		          <ul class="dropdown-menu">
 		            <!-- User image -->
@@ -78,7 +78,7 @@
 		        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
 		      </div>
 		      <div class="pull-left info">
-		        <p>Ahlijati Nuraminah</p>
+		        <p>Iwan Sinanto Ate</p>
 		        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
 		      </div>
 		    </div>
