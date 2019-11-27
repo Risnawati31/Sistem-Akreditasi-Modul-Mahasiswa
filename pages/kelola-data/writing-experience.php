@@ -1,4 +1,5 @@
 <?php include '../static/top.php'; ?>
+<<<<<<< HEAD
     <section class="content">
       <div class="row">
         <div class="col-xs-12">

@@ -1,6 +1,6 @@
 <header class="main-header">
   <!-- Logo -->
-  <a href="../../index.php" class="logo"><b>Admin</b> MHS</a>
+  <a href="../../index.php" class="logo"><b>Mahasiswa</b></a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top" role="navigation">
     <!-- Sidebar toggle button-->
@@ -13,14 +13,14 @@
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-            <span class="hidden-xs">Ahlijati Nuraminah</span>
+            <span class="hidden-xs">Iwan Sinanto Ate</span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
             <li class="user-header">
               <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
               <p>
-                Fulan Fulan - Web Developer
+                Iwan Sinanto Ate - Student
                 <small>Member since Nov. 2012</small>
               </p>
             </li>

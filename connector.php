@@ -24,11 +24,6 @@
 				$_SESSION['page'] = "kelola";
 				$_SESSION['subpage'] = "leadership-experience";
 				break;
-			case 'kelola-pengabdian-masyarakat':
-				header('location:pages/kelola-data/pengabdian-masyarakat.php');
-				$_SESSION['page'] = "kelola";
-				$_SESSION['subpage'] = "pengabdian-masyarakat";
-				break;
 			case 'kelola-project-experience':
 				header('location:pages/kelola-data/project-experience.php');
 				$_SESSION['page'] = "kelola";
@@ -39,26 +34,32 @@
 				$_SESSION['page'] = "kelola";
 				$_SESSION['subpage'] = "writing-experience";
 				break;
-			case 'kelola-prestasi-mahasiswa':
-				header('location:pages/kelola-data/prestasi-mahasiswa.php');
+			case 'kelola-research-outcome':
+				header('location:pages/kelola-data/research-outcome.php');
 				$_SESSION['page'] = "kelola";
-				$_SESSION['subpage'] = "prestasi-mahasiswa";
+				$_SESSION['subpage'] = "research-outcome";
 				break;
-			case 'kelola-personal-details':
-				header('location:pages/public/personal-details.php');
-				$_SESSION['page'] = "personal-details";
-				$_SESSION['subpage'] = "";
-				break;			
-			case 'blog':
-				header('location:pages/public/blog.php');
-				$_SESSION['page'] = "dashboard";
-				$_SESSION['subpage'] = "";
+			case 'kelola-professional-certification':
+				header('location:pages/kelola-data/professional-certification.php');
+				$_SESSION['page'] = "kelola";
+				$_SESSION['subpage'] = "professional-certification";
 				break;	
-			case 'login':
-				header('location:pages/public/login.php');
-				$_SESSION['page'] = "login";
-				$_SESSION['subpage'] = "";
-				break;			
+			case 'kelola-skill-experience':
+				header('location:pages/kelola-data/skill-experience.php');
+				$_SESSION['page'] = "kelola";
+				$_SESSION['subpage'] = "skill-experience";
+				break;
+			case 'kelola-working-internship':
+				header('location:pages/kelola-data/working-internship.php');
+				$_SESSION['page'] = "kelola";
+				$_SESSION['subpage'] = "working-internship";
+				break;
+			case 'kelola-training-workshop-seminar':
+				header('location:pages/kelola-data/training-workshop-seminar.php');
+				$_SESSION['page'] = "kelola";
+				$_SESSION['subpage'] = "training-workshop-seminar";
+				break;
+			
 			default:
 				echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
 				break;

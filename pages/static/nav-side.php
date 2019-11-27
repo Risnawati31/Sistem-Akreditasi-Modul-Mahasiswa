@@ -9,7 +9,7 @@
           <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
         </div>
         <div class="pull-left info">
-          <p>Ahlijati Nuraminah</p>
+          <p>Iwan Sinanto Ate</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -41,6 +41,13 @@
           </a>
           <ul class="treeview-menu">
             <?php
+              if($_SESSION['subpage']=='personal-details') {
+                echo "<li class='active'><a href='../../connector.php?page='kelola-personal-details'><i class='fa fa-circle-o'></i> Data Personal Details</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-personal-details'><i class='fa fa-circle-o'></i> Data Personal Details</a></li>";
+              }
+            ?>
+            <?php
               if($_SESSION['subpage']=='education') {
                 echo "<li class='active'><a href='../../connector.php?page=kelola-education'><i class='fa fa-circle-o'></i> Data Education</a></li>";
               } else { 
@@ -52,13 +59,6 @@
                 echo "<li class='active'><a href='../../connector.php?page=kelola-project-experience'><i class='fa fa-circle-o'></i> Data Project Experience</a></li>";
               } else { 
                 echo "<li><a href='../../connector.php?page=kelola-project-experience'><i class='fa fa-circle-o'></i> Data Project Experience</a></li>";
-              }
-            ?>
-            <?php
-              if($_SESSION['subpage']=='pengabdian-masyarakat') {
-                echo "<li class='active'><a href='../../connector.php?page=kelola-pengabdian-masyarakat'><i class='fa fa-circle-o'></i> Data Pengabdian Masyarakat</a></li>";
-              } else { 
-                echo "<li><a href='../../connector.php?page=kelola-pengabdian-masyarakat'><i class='fa fa-circle-o'></i> Data Pengabdian Masyarakat</a></li>";
               }
             ?>
             <?php
@@ -75,14 +75,47 @@
                 echo "<li><a href='../../connector.php?page=kelola-writing-experience'><i class='fa fa-circle-o'></i> Data Writing Experience</a></li>";
               }
             ?>
-            <?php
-              if($_SESSION['subpage']=='personal-details') {
-                echo "<li class='active'><a href='../../connector.php?page='kelola-personal-details'><i class='fa fa-circle-o'></i> Data Personal Details</a></li>";
+             <?php
+              if($_SESSION['subpage']=='research-outcome') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-research-outcome'><i class='fa fa-circle-o'></i> Data Research Outcome</a></li>";
               } else { 
-                echo "<li><a href='../../connector.php?page=kelola-personal-details'><i class='fa fa-circle-o'></i> Data Personal Details</a></li>";
+                echo "<li><a href='../../connector.php?page=kelola-research-outcome'><i class='fa fa-circle-o'></i> Data Research Outcome </a></li>";
               }
             ?>
+            <?php
+              if($_SESSION['subpage']=='professional-certification') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-professional-certification'><i class='fa fa-circle-o'></i> Data Professional Certification</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-professional-certification'><i class='fa fa-circle-o'></i> Data Professional Certification </a></li>";
+              }
+            ?>
+             <?php
+              if($_SESSION['subpage']=='skill-experience') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-skill-experience'><i class='fa fa-circle-o'></i> Data Skill Experience</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-skill-experience'><i class='fa fa-circle-o'></i> Data Skill Experience</a></li>";
+              }
+            ?>
+			 <?php  
+              if($_SESSION['subpage']=='working-internship') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-working-internship'><i class='fa fa-circle-o'></i> Data Working & internship</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-working-internship'><i class='fa fa-circle-o'></i> Data Working & internship</a></li>";
+              }
+            ?>
+			 <?php  
+              if($_SESSION['subpage']=='training-workshop-seminar') {
+                echo "<li class='active'><a href='../../connector.php?page=kelola-training-workshop-seminar'><i class='fa fa-circle-o'></i> Training,Workshop,Seminar</a></li>";
+              } else { 
+                echo "<li><a href='../../connector.php?page=kelola-training-workshop-seminar'><i class='fa fa-circle-o'></i> Training,Workshop,Seminar</a></li>";
+              }
+            ?>
+
           </ul>
+            <a href="../../connector.php?page=dashboard">
+            <i class="fa fa-dashboard"></i>  Cetak CV
+          </a>
+
         </li>
         <?php
           if($_SESSION['page']=='public') {
