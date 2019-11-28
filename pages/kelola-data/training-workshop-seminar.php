@@ -13,15 +13,23 @@
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th colspan="8">Nama</th>
+                    <th>ID</th>
+                    <th>Nama Kegiatan</th>
                     <th>Posisi</th>
+                    <th>Tahun</th>
+                    <th>Lokasi</th>
+                    <th>Kategori</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                        <td colspan="8">Amazing You</td>
+                        <td>#01</td>
+                        <td>Amazing You</td>
                         <td>Panitia</td>
+                        <td>2018</td>
+                        <td>ICE BSD City</td>
+                        <td>Training</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -29,8 +37,12 @@
                         </td>
                   </tr>
                   <tr>
-                        <td colspan="8">Github Workshop</td>
+                        <td>#02</td>
+                        <td>Github Workshop</td>
                         <td>Peserta</td>
+                        <td>2019</td>
+                        <td>EBS Lt. 18</td>
+                        <td>Workshop</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -38,8 +50,12 @@
                         </td>
                   </tr>
                   <tr>
-                        <td colspan="8">Techtalk</td>
+                        <td>#03</td>
+                        <td>Techtalk</td>
                         <td>Panitia</td>
+                        <td>2019</td>
+                        <td>R. Auditorium</td>
+                        <td>Seminar</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
