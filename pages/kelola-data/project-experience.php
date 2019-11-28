@@ -13,15 +13,20 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th>Nama</th>
+                    <th>ID</th>                  	
+                    <th>Nama Project</th>
                     <th>Tahun</th>
-                    <th>Actions</th>
+                    <th>Teknologi Digunakan</th>
+                    <th>Deskripsi</th>
                   </tr>
                 </thead>
                 <tbody>
                 	<tr>
+                		<td>#01</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
+                        <td>Mengukur Akreditasi</td>
+                        <td>Untuk Kegiatan Belajar</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -29,8 +34,11 @@
                         </td>
                 	</tr>
                 	<tr>
+                		<td>#02</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
+                        <td>Mengukur Akreditasi</td>
+                        <td>Untuk Kegiatan Belajar</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -38,8 +46,11 @@
                         </td>
                 	</tr>
                 	<tr>
+                		<td>#03</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
+                        <td>Mengukur Akreditasi</td>
+                        <td>Untuk Kegiatan Belajar</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
