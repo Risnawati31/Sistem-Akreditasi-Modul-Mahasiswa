@@ -16,7 +16,7 @@
                     <th>ID</th>                  	
                     <th>Nama Project</th>
                     <th>Tahun</th>
-                    <th>Teknologi Digunakan</th>
+                    <th>Kegunaan Teknologi</th>
                     <th>Deskripsi</th>
                   </tr>
                 </thead>
@@ -73,13 +73,28 @@
           <div class="modal-body">
 
              <div class="form-group">
-                <label>Nama</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
+                <label>Nama Project</label>
+                <input type="text" class="form-control" name="name" placeholder="Masukan Nama Project">
               </div>
 
               <div class="form-group">
                 <label>Tahun</label>
                 <textarea type="text" class="form-control" name="alamat" placeholder="Masukan Tahun"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>Kegunaan Teknologi</label>
+                <input type="text" class="form-control" name="name" placeholder="Masukan Kegunaan Teknologi">
+              </div>
+
+              <div class="form-group">
+                <label>Deskripsi</label>
+                <input type="text" class="form-control" name="name" placeholder="Deskripsi">
+              </div>
+
+              <div class="form-group">
+                <label>Url Project</label>
+                <input type="text" class="form-control" name="name" placeholder="Masukan Link Project atau Link Portofolio">
               </div>
           </div>
           <div class="modal-footer">
