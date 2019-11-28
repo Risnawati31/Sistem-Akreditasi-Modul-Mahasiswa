@@ -13,22 +13,22 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th>ID</th>
-                    <th>Nama</th>
-                    <th>Posisi</th>
-                    <th>Tahun Mulai</th>
-                    <th>Tahun Berakhir</th>
-                    <th>Deskripsi</th>
+                    <td>ID</td>
+                    <td>Nama</td>
+                    <td>Posisi</td>
+                    <td>Tahun Mulai</td>
+                    <td>Tahun Berakhir</td>
+                    <td>Deskripsi</td>
                   </tr>
                 </thead>
                 <tbody>
                 	<tr>
-                    <th>ID</th>
-                    <th>Nama</th>
-                    <th>Posisi</th>
-                    <th>Tahun Mulai</th>
-                    <th>Tahun Berakhir</th>
-                    <th>Deskripsi</th>
+                    <td>ID</td>
+                    <td>Nama</td>
+                    <td>Posisi</td>
+                    <td>Tahun Mulai</td>
+                    <td>Tahun Berakhir</td>
+                    <td>Deskripsi</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -36,12 +36,12 @@
                         </td>
                 	</tr>
                 	<tr>
-                    <th>ID</th>
-                    <th>Nama</th>
-                    <th>Posisi</th>
-                    <th>Tahun Mulai</th>
-                    <th>Tahun Berakhir</th>
-                    <th>Deskripsi</th>
+                    <td>ID</td>
+                    <td>Nama</td>
+                    <td>Posisi</td>
+                    <td>Tahun Mulai</td>
+                    <td>Tahun Berakhir</td>
+                    <td>Deskripsi</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -49,12 +49,12 @@
                         </td>
                 	</tr>
                 	<tr>
-                    <th>ID</th>
-                    <th>Nama</th>
-                    <th>Posisi</th>
-                    <th>Tahun Mulai</th>
-                    <th>Tahun Berakhir</th>
-                    <th>Deskripsi</th>
+                    <td>ID</td>
+                    <td>Nama</td>
+                    <td>Posisi</td>
+                    <td>Tahun Mulai</td>
+                    <td>Tahun Berakhir</td>
+                    <td>Deskripsi</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
