@@ -14,6 +14,7 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
+                    <th>ID</th>
                     <th>Nama Skills</th>
                     <th>Nama Tools</th>
                     <th>Actions</th>
@@ -21,6 +22,7 @@
                 </thead>
                 <tbody>
                 	<tr>
+                    <td>2001</td>
                     	<td>Video Editor</td>
                         <td>Adobe Premiere</td>
                         <td>
@@ -30,6 +32,7 @@
                         </td>
                 	</tr>
                 	<tr>
+                    <td>2002</td>
                     	<td>Database</td>
                         <td>MySQL</td>
                         <td>
@@ -39,6 +42,7 @@
                         </td>
                 	</tr>
                 	<tr>
+                    <td>2002</td>
                     	<td>Web Programmer</td>
                         <td>HTML</td>
                         <td>

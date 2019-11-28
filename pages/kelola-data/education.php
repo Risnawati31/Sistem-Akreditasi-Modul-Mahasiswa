@@ -13,6 +13,7 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
+                    <th>ID</th>
                     <th>Nama</th>
                     <th>Tahun</th>
                     <th>Kota</th>
@@ -21,6 +22,7 @@
                 </thead>
                 <tbody>
                 	<tr>
+                        <td>1901</td>
                     	  <td>SMA T DARUL'AMAL</td>
                         <td>2017</td>
 					             	<td>Sukabumi</td>
@@ -31,6 +33,7 @@
                         </td>
                 	</tr>
                 	<tr>
+                        <td>1901</td>
                       	<td>SMA T DARUL'AMAL</td>
                         <td>2017</td>
 						            <td>Sukabumi</td>
@@ -41,6 +44,7 @@
                         </td>
                 	</tr>
                 	<tr>
+                        <td>1901</td>
                     	  <td>SMA T DARUL'AMAL</td>
                         <td>2017</td>
 						            <td>Sukabumi</td>
