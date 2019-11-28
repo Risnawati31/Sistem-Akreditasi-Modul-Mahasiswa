@@ -13,9 +13,12 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
+                    <th>ID</th>
                     <th>Nama</th>
-                    <th>Tahun</th>
-                    <th>Actions</th>
+                    <th>Posisi</th>
+                    <th>Tahun Mulai</th>
+                    <th>Tahun Berakhir</th>
+                    <th>Deskripsi</th>
                   </tr>
                 </thead>
                 <tbody>
