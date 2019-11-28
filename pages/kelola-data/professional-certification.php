@@ -70,6 +70,10 @@
                 <label>Lembaga</label>
                 <input type="text" class="form-control" name="tahun" placeholder="Masukan Nama Lembaga">
               </div>
+              <br>
+              <div>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Upload File</button>
+                </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
@@ -96,6 +100,10 @@
                 <label>Nama Lembaga</label>
                 <input type="text" class="form-control" name="tahun" placeholder="Masukan Nama Lembaga">
               </div>
+              <br>
+              <div>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Upload File</button>
+                </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
