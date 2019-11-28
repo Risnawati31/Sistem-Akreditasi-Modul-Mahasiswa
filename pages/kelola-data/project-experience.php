@@ -18,6 +18,8 @@
                     <th>Tahun</th>
                     <th>Kegunaan Teknologi</th>
                     <th>Deskripsi</th>
+                    <th>URL</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -27,6 +29,7 @@
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
                         <td>Untuk Kegiatan Belajar</td>
+                        <td>WWW.COM</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -39,6 +42,7 @@
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
                         <td>Untuk Kegiatan Belajar</td>
+                        <td>WWW.COM</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -51,6 +55,7 @@
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
                         <td>Untuk Kegiatan Belajar</td>
+                        <td>WWW.COM</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -68,33 +73,43 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Edit Project</h4>
+            <h4 class="modal-title">Add Project</h4>
           </div>
           <div class="modal-body">
 
+          	<div class="form-group">
+                <label>ID</label>
+                <input type="text" class="form-control" name="id" placeholder="Masukan ID">
+              </div>
+
              <div class="form-group">
                 <label>Nama Project</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama Project">
+                <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
               </div>
 
               <div class="form-group">
                 <label>Tahun</label>
-                <textarea type="text" class="form-control" name="alamat" placeholder="Masukan Tahun"></textarea>
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="datepicker">
+                </div>
               </div>
 
               <div class="form-group">
                 <label>Kegunaan Teknologi</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Kegunaan Teknologi">
+                <input type="text" class="form-control" name="kegunaankegiatan" placeholder="Masukan Kegunaan Teknologi">
               </div>
 
               <div class="form-group">
                 <label>Deskripsi</label>
-                <input type="text" class="form-control" name="name" placeholder="Deskripsi">
+                <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi">
               </div>
 
               <div class="form-group">
                 <label>Url Project</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Link Project atau Link Portofolio">
+                <input type="text" class="form-control" name="url" placeholder="Masukan Link Project atau Link Portofolio">
               </div>
           </div>
           <div class="modal-footer">
@@ -114,20 +129,45 @@
 		      </div>
 		      <div class="modal-body">
              <div class="form-group">
-                <label>Nama</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
+                <label>ID</label>
+                <input type="text" class="form-control" name="id" placeholder="Masukan ID">
+              </div>
+
+             <div class="form-group">
+                <label>Nama Project</label>
+                <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
               </div>
 
               <div class="form-group">
                 <label>Tahun</label>
-                <textarea type="text" class="form-control" name="alamat" placeholder="Masukan Tahun"></textarea>
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="datepicker">
+                </div>
               </div>
+
+              <div class="form-group">
+                <label>Kegunaan Teknologi</label>
+                <input type="text" class="form-control" name="kegunaankegiatan" placeholder="Masukan Kegunaan Teknologi">
+              </div>
+
+              <div class="form-group">
+                <label>Deskripsi</label>
+                <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi">
+              </div>
+
+              <div class="form-group">
+                <label>Url Project</label>
+                <input type="text" class="form-control" name="url" placeholder="Masukan Link Project atau Link Portofolio">
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
 		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-		        <button type="button" class="btn btn-primary">Simpan</button>
-		      </div>
-		    </div>
       </div>
     </div>
 
