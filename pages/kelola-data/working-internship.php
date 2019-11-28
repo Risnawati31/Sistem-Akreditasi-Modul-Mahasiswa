@@ -23,8 +23,12 @@
                 </thead>
                 <tbody>
                 	<tr>
-                        <td>Sistem Akreditasi</td>
-                        <td>2018</td>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Posisi</th>
+                    <th>Tahun Mulai</th>
+                    <th>Tahun Berakhir</th>
+                    <th>Deskripsi</th>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -32,8 +36,12 @@
                         </td>
                 	</tr>
                 	<tr>
-                        <td>Sistem Akreditasi</td>
-                        <td>2018</td>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Posisi</th>
+                    <th>Tahun Mulai</th>
+                    <th>Tahun Berakhir</th>
+                    <th>Deskripsi</th>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -41,8 +49,12 @@
                         </td>
                 	</tr>
                 	<tr>
-                        <td>Sistem Akreditasi</td>
-                        <td>2018</td>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Posisi</th>
+                    <th>Tahun Mulai</th>
+                    <th>Tahun Berakhir</th>
+                    <th>Deskripsi</th>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
