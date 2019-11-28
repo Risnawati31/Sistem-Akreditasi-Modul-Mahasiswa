@@ -86,6 +86,10 @@
                 <label>Posisi</label>
                 <input type="text" class="form-control" name="tahun" placeholder="Masukan Peran anda dalam acara">
               </div>
+              <br>
+              <div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Upload File</button>
+              </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
@@ -112,6 +116,10 @@
                 <label>Posisi</label>
                 <input type="text" class="form-control" name="tahun" placeholder="Masukan Peran dalam acara">
               </div>
+              <br>
+              <div>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Upload File</button>
+                </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
