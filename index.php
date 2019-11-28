@@ -103,14 +103,14 @@
 		          <i class="fa fa-angle-left pull-right"></i>
 		        </a>
 		        <ul class="treeview-menu">
+		          <li><a href="connector.php?page=kelola-personal-details"><i class="fa fa-circle-o"></i> Data Personal Details</a></li>	
 		          <li><a href="connector.php?page=kelola-education"><i class="fa fa-circle-o"></i> Data Education</a></li>
 		          <li><a href="connector.php?page=kelola-project-experience"><i class="fa fa-circle-o"></i> Data Project Experience</a></li>
 		          <li><a href="connector.php?page=kelola-leadership-experience"><i class="fa fa-circle-o"></i> Data Leadership Experience</a></li>
-		          <li><a href="connector.php?page=kelola-personal-details"><i class="fa fa-circle-o"></i> Data Personal Details</a></li>
 		          <li><a href="connector.php?page=kelola-writing-experience"><i class="fa fa-circle-o"></i> Data Writing Experience</a></li>
-		          <li><a href="connector.php?page=kelola-skill-experience"><i class="fa fa-circle-o"></i> Data Skill Experience</a></li>
 		          <li><a href="connector.php?page=kelola-research-outcome"><i class="fa fa-circle-o"></i> Data Research Outcome</a></li>
-		          <li><a href="connector.php?page=kelola-professional-certification"><i class="fa fa-circle-o"></i> Data Professional Certification</a></li>
+		          <li><a href="connector.php?page=kelola-professional-certification"><i class="fa fa-circle-o"></i> Data Professional Certification</a>
+		          <li><a href="connector.php?page=kelola-skill-experience"><i class="fa fa-circle-o"></i> Data Skill Experience</a></li>
 				  <li><a href="connector.php?page=kelola-working-internship"><i class="fa fa-circle-o"></i> Data Working Internship</a></li>
 				  <li><a href="connector.php?page=kelola-training-workshop-seminar"><i class="fa fa-circle-o"></i> Training,Workshop,Seminar</a></li>
 		        </ul>
