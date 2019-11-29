@@ -17,7 +17,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" class="form-control pull-right" id="datepicker">
+                  <input type="text" class="form-control pull-right" id="datepicker" placeholder="DD-MM-YYY">
                 </div>
               </div>
 
@@ -36,7 +36,7 @@
                 <input type="text" class="form-control" name="url" placeholder="Masukan Link Project atau Link Portofolio">
               </div>
               </div>
-            
+
               
               <div class="box-footer">
                 <button type="button" class="btn btn-primary">Simpan</button>
