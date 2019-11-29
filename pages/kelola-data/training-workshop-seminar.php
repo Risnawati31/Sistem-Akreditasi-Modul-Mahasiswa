@@ -6,7 +6,7 @@
             <div class="box-header">
               <h3 class="box-title">List Training, Seminar, Workshop</h3>
               <div class="pull-right box-tools">
-                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Kegiatan</button>
+                <a href="form-training.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Skills</button></a>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -72,6 +72,9 @@
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
+
+            <!--<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Sertifikat</button>--> <!--Alternatif for modal-->
+            
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <h4 class="modal-title">Add Training/Seminar/Workshop</h4>
           </div>
