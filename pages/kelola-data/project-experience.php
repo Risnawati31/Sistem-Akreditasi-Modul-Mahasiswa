@@ -6,8 +6,8 @@
             <div class="box-header">
               <h3 class="box-title">Project Experience</h3>
               <div class="pull-right box-tools">
-	            	<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Project Experience</button>
-	          </div>
+                <!-- <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Writing Experience</button> -->
+                <a href="form-project-experience.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Project Experience</button></a>
             </div><!-- /.box-header -->
             <div class="box-body">
               <table class="table table-bordered table-striped">
