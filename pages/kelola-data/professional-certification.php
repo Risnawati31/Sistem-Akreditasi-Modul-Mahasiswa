@@ -13,15 +13,30 @@
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th colspan="8">Nama Sertifikat</th>
+                    <th>ID</th>
+                    <th>Nama Sertifikat</th>
                     <th>Nama Lembaga</th>
+                    <th>Tahun</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                        <td colspan="8">#Sharing Time</td>
-                        <td>Ayah Amanah</td>
+                    <th>#01</th>
+                    <th>#Sharing Time</th>
+                    <th>Ayah Amanah</th>
+                    <th>2018</th>
+                    <td>
+                      <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
+
+                      <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>#02</th>
+                    <th>BOLT</th>
+                    <th>BEM ESQBS</th>
+                    <th>2018</th>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -29,17 +44,10 @@
                         </td>
                   </tr>
                   <tr>
-                        <td colspan="8">Bolt</td>
-                        <td>Bem ESQBS</td>
-                        <td>
-                            <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
-
-                            <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
-                        </td>
-                  </tr>
-                  <tr>
-                        <td colspan="8">Welcoming Week</td>
-                        <td>ESQ Business School</td>
+                        <th>#03</th>
+                    <th>Welcoming Week</th>
+                    <th>ESQ Business School</th>
+                    <th>2018</th>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
