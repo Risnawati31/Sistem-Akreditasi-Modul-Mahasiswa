@@ -8,13 +8,13 @@
             </div><!-- /.box-header -->
             <div class="box-body">
               <div class="form-group">
-                <label>Judul Karya</label>
-                <input type="text" class="form-control" name="judul" placeholder="Masukan Judul Karya">
+                <label>ID</label>
+                <input type="text" class="form-control" name="id" placeholder="Masukan ID">
               </div>
               <div class="form-group">
                 <div class="form-group">
-                <label>Nama</label>
-                <input type="text" class="form-control" name="nama" placeholder="Masukan Nama Project">
+                <label>Nama Project</label>
+                <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
               </div>
 
               <div class="form-group">
@@ -46,6 +46,13 @@
                 <label>Deskripsi</label>
                 <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi">
               </div>
+
+              <div class="form-group">
+                  <label for="exampleInputFile">Upload File</label>
+                  <input type="file" id="exampleInputFile">
+
+                  <p class="help-block">Upload File .pdf maks 3mb.</p>
+                </div>
 
               <div class="box-footer">
                 <button type="button" class="btn btn-primary">Simpan</button>

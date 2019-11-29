@@ -8,6 +8,10 @@
             </div><!-- /.box-header -->
             <div class="box-body">
               <div class="form-group">
+                <label>ID</label>
+                <input type="text" class="form-control" name="id" placeholder="Masukan ID">
+              </div>
+              <div class="form-group">
                 <label>Nama Project</label>
                 <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
               </div>

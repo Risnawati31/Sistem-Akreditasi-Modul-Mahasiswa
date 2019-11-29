@@ -12,7 +12,8 @@
             <div class="box-body">
               <table class="table table-bordered table-striped">
                 <thead>
-                  <tr>             	
+                  <tr>
+                    <th>ID</th>             	
                     <th>Nama Project</th>
                     <th>Tahun</th>
                     <th>Kegunaan Teknologi</th>
@@ -23,6 +24,7 @@
                 </thead>
                 <tbody>
                 	<tr>
+                        <td>01</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
@@ -35,6 +37,7 @@
                         </td>
                 	</tr>
                 	<tr>
+                        <td>02</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
@@ -47,6 +50,7 @@
                         </td>
                 	</tr>
                 	<tr>
+                        <td>03</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>

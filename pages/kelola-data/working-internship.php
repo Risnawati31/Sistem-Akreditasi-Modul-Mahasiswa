@@ -13,8 +13,9 @@
             <div class="box-body">
               <table class="table table-bordered table-striped">
                 <thead>
-                  <tr>                 
-                    <th>Nama</th>
+                  <tr>
+                    <th>ID</th>                 
+                    <th>Nama Project</th>
                     <th>Posisi</th>
                     <th>Tahun Mulai</th>
                     <th>Tahun Berakhir</th>
@@ -24,6 +25,7 @@
                 </thead>
                 <tbody>
                   <tr>
+                        <td>01</td>
                         <td>Nasrul</td>
                         <td>Founder</td>
                         <td>01-01-2011</td>
@@ -36,6 +38,7 @@
                         </td>
                   </tr>
                   <tr>
+                        <td>02</td>
                         <td>Zul</td>
                         <td>Founder</td>
                         <td>01-01-2011</td>
@@ -48,6 +51,7 @@
                         </td>
                   </tr>
                   <tr>
+                        <td>03</td>
                         <td>Mar</td>
                         <td>Founder</td>
                         <td>01-01-2011</td>
