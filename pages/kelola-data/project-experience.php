@@ -24,7 +24,7 @@
                 </thead>
                 <tbody>
                 	<tr>
-                		<td>#01</td>
+                		<td>01</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
@@ -37,7 +37,7 @@
                         </td>
                 	</tr>
                 	<tr>
-                		<td>#02</td>
+                		<td>02</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
@@ -50,7 +50,7 @@
                         </td>
                 	</tr>
                 	<tr>
-                		<td>#03</td>
+                		<td>03</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>

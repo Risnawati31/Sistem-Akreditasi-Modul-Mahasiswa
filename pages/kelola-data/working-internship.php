@@ -24,9 +24,9 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>#01</td>
+                    <td>01</td>
                         <td>Nasrul</td>
-                        <td>Founder/td>
+                        <td>Founder</td>
                         <td>01-01-2011</td>
                         <td>01-01-2012</td>
                         <td>Isi Deskripsi</td>
@@ -37,9 +37,9 @@
                         </td>
                   </tr>
                   <tr>
-                    <td>#02</td>
+                    <td>02</td>
                         <td>Zul</td>
-                        <td>Founder/td>
+                        <td>Founder</td>
                         <td>01-01-2011</td>
                         <td>01-01-2012</td>
                         <td>Isi Deskripsi</td>
@@ -50,9 +50,9 @@
                         </td>
                   </tr>
                   <tr>
-                    <td>#03</td>
+                    <td>03</td>
                         <td>Mar</td>
-                        <td>Founder/td>
+                        <td>Founder</td>
                         <td>01-01-2011</td>
                         <td>01-01-2012</td>
                         <td>Isi Deskripsi</td>
