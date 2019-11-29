@@ -13,7 +13,6 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th>ID</th>
                     <th>Nama</th>
                     <th>Tahun</th>
                     <th>Kota</th>
@@ -22,7 +21,6 @@
                 </thead>
                 <tbody>
                   <tr>
-                        <td>1901</td>
                         <td>SMA T DARUL'AMAL</td>
                         <td>2017</td>
                         <td>Sukabumi</td>
@@ -33,7 +31,6 @@
                         </td>
                   </tr>
                   <tr>
-                        <td>1901</td>
                         <td>SMA T DARUL'AMAL</td>
                         <td>2017</td>
                         <td>Sukabumi</td>
@@ -44,7 +41,6 @@
                         </td>
                   </tr>
                   <tr>
-                        <td>1901</td>
                         <td>SMA T DARUL'AMAL</td>
                         <td>2017</td>
                         <td>Sukabumi</td>
@@ -60,54 +56,14 @@
           </div><!-- /.box -->
         </div><!-- /.col -->
 
-     <div id="modalAdd" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-          <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Edit Education</h4>
-          </div>
-          <div class="modal-body">
-             <div class="form-group">
-                <label>ID</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan ID">
-              </div>
-             <div class="form-group">
-                <label>Nama</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
-              </div>
-
-              <div class="form-group">
-                <label>Tahun</label>
-                <input type="text" class="form-control" name="tahun" placeholder="Masukan Tahun">
-              </div>
-
-              <div class="form-group">
-                <label>Kota</label>
-                <input type="text" class="form-control" name="kota" placeholder="Masukan Kota">
-              </div>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-            <button type="button" class="btn btn-primary">Simpan</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
+     
     <div id="modalEdit" class="modal fade" role="dialog">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <h4 class="modal-title">Edit Education</h4>
           </div>
           <div class="modal-body">
-             <div class="form-group">
-                <label>ID</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan ID">
-              </div>
              <div class="form-group">
                 <label>Nama</label>
                 <input type="text" class="form-control" name="name" placeholder="Masukan Nama">

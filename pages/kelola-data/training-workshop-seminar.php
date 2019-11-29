@@ -6,14 +6,13 @@
             <div class="box-header">
               <h3 class="box-title">List Training, Seminar, Workshop</h3>
               <div class="pull-right box-tools">
-                <a href="form-training.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Skills</button></a>
+                <a href="form-training.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Training</button></a>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th>ID</th>
                     <th>Nama Kegiatan</th>
                     <th>Posisi</th>
                     <th>Tahun</th>
@@ -24,7 +23,6 @@
                 </thead>
                 <tbody>
                   <tr>
-                        <td>#01</td>
                         <td>Amazing You</td>
                         <td>Panitia</td>
                         <td>2018</td>
@@ -37,7 +35,6 @@
                         </td>
                   </tr>
                   <tr>
-                        <td>#02</td>
                         <td>Github Workshop</td>
                         <td>Peserta</td>
                         <td>2019</td>
@@ -50,7 +47,6 @@
                         </td>
                   </tr>
                   <tr>
-                        <td>#03</td>
                         <td>Techtalk</td>
                         <td>Panitia</td>
                         <td>2019</td>

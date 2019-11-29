@@ -13,7 +13,6 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th>ID</th>
                     <th>Nama Skills</th>
                     <th>Nama Tools</th>
                     <th>Actions</th>
@@ -21,7 +20,6 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>2001</td>
                       <td>Video Editor</td>
                         <td>Adobe Premiere</td>
                         <td>
@@ -31,7 +29,6 @@
                         </td>
                   </tr>
                   <tr>
-                    <td>2002</td>
                       <td>Database</td>
                         <td>MySQL</td>
                         <td>
@@ -41,7 +38,6 @@
                         </td>
                   </tr>
                   <tr>
-                    <td>2002</td>
                       <td>Web Programmer</td>
                         <td>HTML</td>
                         <td>
@@ -56,37 +52,6 @@
           </div><!-- /.box -->
         </div><!-- /.col -->
 
-     <div id="modalAdd" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-          <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Edit Skills</h4>
-          </div>
-          <div class="modal-body">
-             <div class="form-group">
-                <label>ID</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan ID">
-              </div>
-             <div class="form-group">
-                <label>Nama Skills</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama Skill">
-              </div>
-
-              <div class="form-group">
-                <label>Nama Tools</label>
-                <input type="text" class="form-control" name="tahun" placeholder="Masukan Nama Tools">
-              </div>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-            <button type="button" class="btn btn-primary">Simpan</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div id="modalEdit" class="modal fade" role="dialog">
       <div class="modal-dialog">
           <div class="modal-content">
@@ -95,10 +60,6 @@
             <h4 class="modal-title">Edit Skills</h4>
           </div>
           <div class="modal-body">
-             <div class="form-group">
-                <label>ID</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan ID">
-              </div>
              <div class="form-group">
                 <label>Nama Skills</label>
                 <input type="text" class="form-control" name="name" placeholder="Masukan Nama Skill">

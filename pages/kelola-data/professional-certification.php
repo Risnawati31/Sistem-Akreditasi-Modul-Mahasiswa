@@ -9,14 +9,13 @@
 
                 <!--<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Sertifikat</button>--> <!--Alternatif for modal-->
 
-                <a href="form-sertifikat.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Skills</button></a>
+                <a href="form-sertifikat.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Professional Cetrtification</button></a>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th>ID</th>
                     <th>Nama Sertifikat</th>
                     <th>Nama Lembaga</th>
                     <th>Tahun</th>
@@ -25,10 +24,9 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th>#01</th>
-                    <th>#Sharing Time</th>
-                    <th>Ayah Amanah</th>
-                    <th>2018</th>
+                    <td>Sharing Time</td>
+                    <td>Ayah Amanah</td>
+                    <td>2018</td>
                     <td>
                       <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -36,10 +34,9 @@
                     </td>
                   </tr>
                   <tr>
-                    <th>#02</th>
-                    <th>BOLT</th>
-                    <th>BEM ESQBS</th>
-                    <th>2018</th>
+                    <td>BOLT</td>
+                    <td>BEM ESQBS</td>
+                    <td>2018</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -47,10 +44,9 @@
                         </td>
                   </tr>
                   <tr>
-                        <th>#03</th>
-                    <th>Welcoming Week</th>
-                    <th>ESQ Business School</th>
-                    <th>2018</th>
+                    <td>Welcoming Week</td>
+                    <td>ESQ Business School</td>
+                    <td>2018</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -99,7 +95,7 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Edit Sertifikat</h4>
+            <h4 class="modal-title">Edit Professional Sertification</h4>
           </div>
           <div class="modal-body">
              <div class="form-group">

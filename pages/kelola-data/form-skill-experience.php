@@ -4,13 +4,9 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">List Skills</h3>
+              <h3 class="box-title">Add Skills</h3>
             </div><!-- /.box-header -->
             <div class="box-body">
-             <div class="form-group">
-                <label>ID</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan ID">
-              </div>
              <div class="form-group">
                 <label>Nama Skills</label>
                 <input type="text" class="form-control" name="name" placeholder="Masukan Nama Skill">

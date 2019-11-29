@@ -6,7 +6,7 @@
             <div class="box-header">
               <h3 class="box-title">Personal Details</h3>
               <div class="pull-right box-tools">
-                <a href="form-personal-details.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Person</button></a>
+                <a href="form-personal-details.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Personal Details</button></a>
 	          </div>
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -24,7 +24,7 @@
                 <tbody>
                 	<tr>
                     	  <td>1710130000</td>
-                        <td><a href="print-cv-mahasiswa.php">Iwan</td>
+                        <td><a href="print-cv-mahasiswa.php"> Iwan</td>
 					             	<td>Ilmu Komputer</td>
                         <td>(171) 555-2222</td>
                         <td>89 Chiaroscuro Rd, Portland, USA</td>                        
@@ -70,53 +70,12 @@
           </div><!-- /.box -->
         </div><!-- /.col -->
 
-     <div id="modalAdd" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-          <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Edit Person</h4>
-          </div>
-          <div class="modal-body">
-             <div class="form-group">
-                <label>NIM</label>
-                <input type="text" class="form-control" name="nim" placeholder="Masukan NIM">
-             </div>
-
-             <div class="form-group">
-                <label>Nama</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
-              </div>
-
-              <div class="form-group">
-                <label>Jurusan</label>
-                <input type="text" class="form-control" name="jurusan" placeholder="Masukan Jurusan">
-              </div>
-
-              <div class="form-group">
-                <label>Phone</label>
-                <input type="number" class="form-control" name="phone" placeholder="Masukan Nomor HP">
-              </div>
-
-              <div class="form-group">
-                <label>Alamat</label>
-                <textarea type="text" class="form-control" name="alamat" placeholder="Masukan Alamat"></textarea>
-              </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-            <button type="button" class="btn btn-primary">Simpan</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div id="modalEdit" class="modal fade" role="dialog">
   		<div class="modal-dialog">
 	        <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-		        <h4 class="modal-title">Edit Person</h4>
+		        <h4 class="modal-title">Edit Personal Details</h4>
 		      </div>
 		      <div class="modal-body">
              <div class="form-group">
@@ -157,7 +116,7 @@
 		        <div class="modal-content">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-			        <h4 class="modal-title">Delete Person</h4>
+			        <h4 class="modal-title">Delete Personal Details</h4>
 			      </div>
 			      <div class="modal-body">
 			        <p>Apakah kamu ingin menghapus data ini?</p>

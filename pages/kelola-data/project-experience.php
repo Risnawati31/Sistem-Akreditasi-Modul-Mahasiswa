@@ -6,14 +6,13 @@
             <div class="box-header">
               <h3 class="box-title">Project Experience</h3>
               <div class="pull-right box-tools">
-	            	<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Project</button>
+	            	<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Project Experience</button>
 	          </div>
             </div><!-- /.box-header -->
             <div class="box-body">
               <table class="table table-bordered table-striped">
                 <thead>
-                  <tr>
-                    <th>ID</th>                  	
+                  <tr>             	
                     <th>Nama Project</th>
                     <th>Tahun</th>
                     <th>Kegunaan Teknologi</th>
@@ -24,7 +23,6 @@
                 </thead>
                 <tbody>
                 	<tr>
-                		<td>01</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
@@ -37,7 +35,6 @@
                         </td>
                 	</tr>
                 	<tr>
-                		<td>02</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
@@ -50,7 +47,6 @@
                         </td>
                 	</tr>
                 	<tr>
-                		<td>03</td>
                         <td>Sistem Akreditasi</td>
                         <td>2018</td>
                         <td>Mengukur Akreditasi</td>
@@ -73,15 +69,9 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Add Project</h4>
+            <h4 class="modal-title">Add Project Experience</h4>
           </div>
           <div class="modal-body">
-
-          	<div class="form-group">
-                <label>ID</label>
-                <input type="text" class="form-control" name="id" placeholder="Masukan ID">
-              </div>
-
              <div class="form-group">
                 <label>Nama Project</label>
                 <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
@@ -125,14 +115,9 @@
 	        <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-		        <h4 class="modal-title">Edit Project</h4>
+		        <h4 class="modal-title">Edit Project Experience</h4>
 		      </div>
 		      <div class="modal-body">
-             <div class="form-group">
-                <label>ID</label>
-                <input type="text" class="form-control" name="id" placeholder="Masukan ID">
-              </div>
-
              <div class="form-group">
                 <label>Nama Project</label>
                 <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
