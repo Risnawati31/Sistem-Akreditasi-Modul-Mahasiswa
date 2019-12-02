@@ -6,22 +6,37 @@
             <div class="box-header">
               <h3 class="box-title">List Professional Certification</h3>
               <div class="pull-right box-tools">
-                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Sertifikat</button>
+
+                <!--<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Sertifikat</button>--> <!--Alternatif for modal-->
+
+                <a href="form-sertifikat.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Professional Cetrtification</button></a>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th colspan="8">Nama Sertifikat</th>
+                    <th>Nama Sertifikat</th>
                     <th>Nama Lembaga</th>
+                    <th>Tahun</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                        <td colspan="8">#Sharing Time</td>
-                        <td>Ayah Amanah</td>
+                    <td>Sharing Time</td>
+                    <td>Ayah Amanah</td>
+                    <td>2018</td>
+                    <td>
+                      <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
+
+                      <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>BOLT</td>
+                    <td>BEM ESQBS</td>
+                    <td>2018</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -29,17 +44,9 @@
                         </td>
                   </tr>
                   <tr>
-                        <td colspan="8">Bolt</td>
-                        <td>Bem ESQBS</td>
-                        <td>
-                            <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
-
-                            <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
-                        </td>
-                  </tr>
-                  <tr>
-                        <td colspan="8">Welcoming Week</td>
-                        <td>ESQ Business School</td>
+                    <td>Welcoming Week</td>
+                    <td>ESQ Business School</td>
+                    <td>2018</td>
                         <td>
                             <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
@@ -88,7 +95,7 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Edit Sertifikat</h4>
+            <h4 class="modal-title">Edit Professional Sertification</h4>
           </div>
           <div class="modal-body">
              <div class="form-group">

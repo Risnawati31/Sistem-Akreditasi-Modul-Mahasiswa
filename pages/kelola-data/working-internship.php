@@ -4,17 +4,18 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Working Internship</h3>
+              <h3 class="box-title">List Working and Internship</h3>
               <div class="pull-right box-tools">
-                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Project</button>
+                <!-- <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Writing Experience</button> -->
+                <a href="form-working-internship.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Working Internship</button></a>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th>ID</th>                   
-                    <th>Nama</th>
+                    <th>ID</th>                 
+                    <th>Nama Project</th>
                     <th>Posisi</th>
                     <th>Tahun Mulai</th>
                     <th>Tahun Berakhir</th>
@@ -24,9 +25,9 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>#01</td>
+                        <td>01</td>
                         <td>Nasrul</td>
-                        <td>Founder/td>
+                        <td>Founder</td>
                         <td>01-01-2011</td>
                         <td>01-01-2012</td>
                         <td>Isi Deskripsi</td>
@@ -37,9 +38,9 @@
                         </td>
                   </tr>
                   <tr>
-                    <td>#02</td>
+                        <td>02</td>
                         <td>Zul</td>
-                        <td>Founder/td>
+                        <td>Founder</td>
                         <td>01-01-2011</td>
                         <td>01-01-2012</td>
                         <td>Isi Deskripsi</td>
@@ -50,9 +51,9 @@
                         </td>
                   </tr>
                   <tr>
-                    <td>#03</td>
+                        <td>03</td>
                         <td>Mar</td>
-                        <td>Founder/td>
+                        <td>Founder</td>
                         <td>01-01-2011</td>
                         <td>01-01-2012</td>
                         <td>Isi Deskripsi</td>
@@ -73,14 +74,9 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Add Project</h4>
+            <h4 class="modal-title">Add Working and Internship</h4>
           </div>
           <div class="modal-body">
-
-            <div class="form-group">
-                <label>ID</label>
-                <input type="text" class="form-control" name="id" placeholder="Masukan ID">
-              </div>
 
              <div class="form-group">
                 <label>Nama</label>
@@ -131,13 +127,9 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Edit Project</h4>
+            <h4 class="modal-title">Edit Working and Internship</h4>
           </div>
           <div class="modal-body">
-             <div class="form-group">
-                <label>ID</label>
-                <input type="text" class="form-control" name="id" placeholder="Masukan ID">
-              </div>
 
              <div class="form-group">
                 <label>Nama</label>

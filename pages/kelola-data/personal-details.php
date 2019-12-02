@@ -6,7 +6,7 @@
             <div class="box-header">
               <h3 class="box-title">Personal Details</h3>
               <div class="pull-right box-tools">
-                <a href="form-personal-details.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Person</button></a>
+                <a href="form-personal-details.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Personal Details</button></a>
 	          </div>
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -24,7 +24,7 @@
                 <tbody>
                 	<tr>
                     	  <td>1710130000</td>
-                        <td><a href="print-cv-mahasiswa.php">Iwan</td>
+                        <td><a href="print-cv-mahasiswa.php"> Iwan</td>
 					             	<td>Ilmu Komputer</td>
                         <td>(171) 555-2222</td>
                         <td>89 Chiaroscuro Rd, Portland, USA</td>                        
@@ -111,12 +111,12 @@
       </div>
     </div>
 
-      <div  id="modalEdit"  class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div id="modalEdit" class="modal fade" role="dialog">
   		<div class="modal-dialog">
 	        <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-		        <h4 class="modal-title">Edit Person</h4>
+		        <h4 class="modal-title">Edit Personal Details</h4>
 		      </div>
 		      <div class="modal-body">
              <div class="form-group">
@@ -157,7 +157,7 @@
 		        <div class="modal-content">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-			        <h4 class="modal-title">Delete Person</h4>
+			        <h4 class="modal-title">Delete Personal Details</h4>
 			      </div>
 			      <div class="modal-body">
 			        <p>Apakah kamu ingin menghapus data ini?</p>

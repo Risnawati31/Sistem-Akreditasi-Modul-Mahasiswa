@@ -4,14 +4,14 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Personal Details</h3>
+              <h3 class="box-title">List Writing Experience</h3>
               <div class="pull-right box-tools">
                 <!-- <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Writing Experience</button> -->
                 <a href="form-writing-experience.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Writing Experience</button></a>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
-              <table id="tablePersonalDetail" class="table table-bordered table-striped">
+              <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
                     <th>Judul Karya</th>
