@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>CV Mahasiswa</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="../../bootstrap/css/new-bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/bootstrap/css/new-bootstrap.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
-  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../assets/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../../assets/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <style>
