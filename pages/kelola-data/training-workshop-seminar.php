@@ -6,7 +6,7 @@
             <div class="box-header">
               <h3 class="box-title">List Training, Seminar, Workshop</h3>
               <div class="pull-right box-tools">
-                <a href="form-training.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Training</button></a>
+                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd"><i class="fa fa-plus"> </i> Add Training, Seminar, Workshop</button>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -68,27 +68,59 @@
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
-
-            <!--<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Sertifikat</button>--> <!--Alternatif for modal-->
-            
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Add Training/Seminar/Workshop</h4>
+            <h4 class="modal-title">Add Training, Seminar, Workshop</h4>
           </div>
-          <div class="modal-body">
-
-             <div class="form-group">
+          <div class="modal-body row">
+            <div class="col-sm-12">
+            <div class="form-group">
                 <label>Nama Kegiatan</label>
                 <input type="text" class="form-control" name="name" placeholder="Masukan Nama Kegiatan">
               </div>
-
+            </div>
+              
+            <div class="col-sm-12">
               <div class="form-group">
                 <label>Posisi</label>
-                <input type="text" class="form-control" name="tahun" placeholder="Masukan Peran anda dalam acara">
+                <input type="text" class="form-control" name="Posisi" placeholder="Peran dalam kegiatan">
               </div>
-              <br>
-              <div>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Upload File</button>
+            </div>
+            
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label>Tahun</label>
+                <input type="text" class="form-control" name="tahun" placeholder="Masukan Tahun">
               </div>
+            </div>
+            
+            <div class="col-sm-12">  
+              <div class="form-group">
+                <label>Lokasi</label>
+                <input type="text" class="form-control" name="Lokasi" placeholder="Masukan Lokasi">
+              </div>
+            </div>
+            
+            <div class="col-sm-12">  
+              <div class="form-group">
+                <label>Kategori</label>
+                <input type="text" class="form-control" name="Kategori" placeholder="Masukan Kategori">
+              </div>
+            </div>
+            
+            <div class="col-sm-12">  
+              <div class="form-group">
+                  <label for="exampleInputFile">Upload File</label>
+                  <input type="file" id="exampleInputFile">
+                </div>
+            </div>
+            
+            <div class="col-sm-12">  
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </div>
+            </div>  
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
@@ -96,7 +128,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>    
 
     <div id="modalEdit" class="modal fade" role="dialog">
       <div class="modal-dialog">
@@ -116,9 +148,10 @@
                 <input type="text" class="form-control" name="tahun" placeholder="Masukan Peran dalam acara">
               </div>
               <br>
-              <div>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Upload File</button>
-                </div>
+              <div class="form-group">
+                  <label for="exampleInputFile">Upload File</label>
+                  <input type="file" id="exampleInputFile">
+              </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>

@@ -9,7 +9,7 @@
 
                 <!--<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Sertifikat</button>--> <!--Alternatif for modal-->
 
-                <a href="form-sertifikat.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Professional Cetrtification</button></a>
+                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd"><i class="fa fa-plus"> </i> Add Professional Cetrtification</button>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -64,23 +64,34 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Add Sertifikat</h4>
+            <h4 class="modal-title">Add Professional Sertification</h4>
           </div>
           <div class="modal-body">
-
              <div class="form-group">
                 <label>Nama Sertifikat</label>
                 <input type="text" class="form-control" name="name" placeholder="Masukan Nama Sertifikat">
               </div>
 
               <div class="form-group">
-                <label>Lembaga</label>
-                <input type="text" class="form-control" name="tahun" placeholder="Masukan Nama Lembaga">
+                <label>Nama Lembaga</label>
+                <input type="text" class="form-control" name="Posisi" placeholder="Peran dalam kegiatan">
               </div>
-              <br>
-              <div>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Upload File</button>
+
+              <div class="form-group">
+                <label>Tahun</label>
+                <input type="text" class="form-control" name="tahun" placeholder="Masukan Tahun">
+              </div>
+
+               <div class="form-group">
+                  <label for="exampleInputFile">Upload File</label>
+                  <input type="file" id="exampleInputFile">
                 </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
@@ -98,19 +109,31 @@
             <h4 class="modal-title">Edit Professional Sertification</h4>
           </div>
           <div class="modal-body">
-             <div class="form-group">
+            <div class="form-group">
                 <label>Nama Sertifikat</label>
                 <input type="text" class="form-control" name="name" placeholder="Masukan Nama Sertifikat">
               </div>
 
               <div class="form-group">
                 <label>Nama Lembaga</label>
-                <input type="text" class="form-control" name="tahun" placeholder="Masukan Nama Lembaga">
+                <input type="text" class="form-control" name="Posisi" placeholder="Peran dalam kegiatan">
               </div>
-              <br>
-              <div>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Upload File</button>
+
+              <div class="form-group">
+                <label>Tahun</label>
+                <input type="text" class="form-control" name="tahun" placeholder="Masukan Tahun">
+              </div>
+
+               <div class="form-group">
+                  <label for="exampleInputFile">Upload File</label>
+                  <input type="file" id="exampleInputFile">
                 </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>

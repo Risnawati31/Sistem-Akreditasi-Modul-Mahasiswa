@@ -7,14 +7,13 @@
               <h3 class="box-title">List Working and Internship</h3>
               <div class="pull-right box-tools">
                 <!-- <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Writing Experience</button> -->
-                <a href="form-working-internship.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Working Internship</button></a>
+                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd"><i class="fa fa-plus"> </i> Add Working Internship</button>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
               <table class="table table-bordered table-striped">
                 <thead>
-                  <tr>
-                    <th>ID</th>                 
+                  <tr>              
                     <th>Nama Project</th>
                     <th>Posisi</th>
                     <th>Tahun Mulai</th>
@@ -25,7 +24,6 @@
                 </thead>
                 <tbody>
                   <tr>
-                        <td>01</td>
                         <td>Nasrul</td>
                         <td>Founder</td>
                         <td>01-01-2011</td>
@@ -38,7 +36,6 @@
                         </td>
                   </tr>
                   <tr>
-                        <td>02</td>
                         <td>Zul</td>
                         <td>Founder</td>
                         <td>01-01-2011</td>
@@ -51,7 +48,6 @@
                         </td>
                   </tr>
                   <tr>
-                        <td>03</td>
                         <td>Mar</td>
                         <td>Founder</td>
                         <td>01-01-2011</td>

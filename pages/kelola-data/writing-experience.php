@@ -7,7 +7,7 @@
               <h3 class="box-title">List Writing Experience</h3>
               <div class="pull-right box-tools">
                 <!-- <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Writing Experience</button> -->
-                <a href="form-writing-experience.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Writing Experience</button></a>
+                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd"><i class="fa fa-plus"> </i> Add Writing Experience</button>
             </div>
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -24,9 +24,8 @@
                       <td>Inovasi Tehnologi di Bidang Pertanian</td>
                       <td>Ahlijati Nuraimah</td>
                       <td>
-                          <!-- <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a> -->
-                         <a href="form-writing-experience.php"><button class="btn btn-warning btn-md"><i class="fa fa-edit"> </i> Edit </button></a>
-
+                         
+                          <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
                           <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
                       </td>
@@ -35,8 +34,7 @@
                       <td>Inovasi Tehnologi di Bidang Perikanan</td>
                       <td>Ahlijati Nuraimah</td>
                       <td>
-                          <a href="form-writing-experience.php"><button class="btn btn-warning btn-md"><i class="fa fa-edit"> </i> Edit </button></a>
-
+                          <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
                           <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
                       </td>
@@ -45,7 +43,7 @@
                       <td>Inovasi Tehnologi di Bidang Perumahan</td>
                       <td>Ahlijati Nuraimah</td>
                       <td>
-                          <a href="form-writing-experience.php"><button class="btn btn-warning btn-md"><i class="fa fa-edit"> </i> Edit </button></a>
+                          <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
                           <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
                       </td>
@@ -61,33 +59,140 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Edit Person</h4>
+            <h4 class="modal-title">Add Writing Experience</h4>
           </div>
           <div class="modal-body">
+            <div class="col-sm-6">
              <div class="form-group">
-                <label>NIM</label>
-                <input type="text" class="form-control" name="nim" placeholder="Masukan NIM">
+                <label>Judul Karya</label>
+                <input type="text" class="form-control" name="judul" placeholder="Masukan Judul Karya">
+              </div>
              </div>
+             <div class="col-sm-6"> 
+              <div class="form-group">
+                <label>Nama Dosen</label>
+                <input type="text" class="form-control" name="nama_dosen" placeholder="Masukan Nama Dosen">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Nama Jurnal</label>
+                <input type="text" class="form-control" name="nama_jurnal" placeholder="Masukan Nama Jurnal">
+              </div>
+             </div>
+             <div class="col-sm-6"> 
+              <div class="form-group">
+                <label>Tahun</label>
+                <input type="text" class="form-control" name="tahun" placeholder="Masukan Nama Jurnal">
+              </div>
+            </div>
+            <div class="col-sm-6">
+               <div class="form-group">
+                <label>Volume</label>
+                <input type="text" class="form-control" name="volume" placeholder="Masukan Volume">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Halaman</label>
+                <input type="text" class="form-control" name="halaman" placeholder="Masukan Halaman">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Link URl</label>
+                <input type="text" class="form-control" name="link_url" placeholder="Masukan Link URl">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Kategori</label>
+                <input type="text" class="form-control" name="kategori" placeholder="Masukan Kategori">
+              </div>
+            </div>
+            <div class="col-sm-12">  
+              <div class="form-group">
+                  <label for="exampleInputFile">Upload LOA</label>
+                  <input type="file" id="exampleInputFile">
 
+                  <p class="help-block">Upload LOA .pdf maks 3mb.</p>
+                </div>
+            </div>    
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalEdit" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Edit Writing Experience</h4>
+          </div>
+          <div class="modal-body">
+             <div class="col-sm-6">
              <div class="form-group">
-                <label>Nama</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama">
+                <label>Judul Karya</label>
+                <input type="text" class="form-control" name="judul" placeholder="Masukan Judul Karya">
               </div>
-
+             </div>
+             <div class="col-sm-6"> 
               <div class="form-group">
-                <label>Jurusan</label>
-                <input type="text" class="form-control" name="jurusan" placeholder="Masukan Jurusan">
+                <label>Nama Dosen</label>
+                <input type="text" class="form-control" name="nama_dosen" placeholder="Masukan Nama Dosen">
               </div>
-
+            </div>
+            <div class="col-sm-6">
               <div class="form-group">
-                <label>Phone</label>
-                <input type="number" class="form-control" name="phone" placeholder="Masukan Nomor HP">
+                <label>Nama Jurnal</label>
+                <input type="text" class="form-control" name="nama_jurnal" placeholder="Masukan Nama Jurnal">
               </div>
-
+             </div>
+             <div class="col-sm-6"> 
               <div class="form-group">
-                <label>Alamat</label>
-                <textarea type="text" class="form-control" name="alamat" placeholder="Masukan Alamat"></textarea>
+                <label>Tahun</label>
+                <input type="text" class="form-control" name="tahun" placeholder="Masukan Nama Jurnal">
               </div>
+            </div>
+            <div class="col-sm-6">
+               <div class="form-group">
+                <label>Volume</label>
+                <input type="text" class="form-control" name="volume" placeholder="Masukan Volume">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Halaman</label>
+                <input type="text" class="form-control" name="halaman" placeholder="Masukan Halaman">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Link URl</label>
+                <input type="text" class="form-control" name="link_url" placeholder="Masukan Link URl">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Kategori</label>
+                <input type="text" class="form-control" name="kategori" placeholder="Masukan Kategori">
+              </div>
+            </div>
+            <div class="col-sm-12">  
+              <div class="form-group">
+                  <label for="exampleInputFile">Upload LOA</label>
+                  <input type="file" id="exampleInputFile">
+
+                  <p class="help-block">Upload LOA .pdf maks 3mb.</p>
+                </div>
+            </div>  
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>

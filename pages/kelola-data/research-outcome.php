@@ -7,13 +7,12 @@
               <h3 class="box-title">Research Outcome</h3>
               <div class="pull-right box-tools">
                 <!-- <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Writing Experience</button> -->
-                <a href="form-reasearch-outcome.php"><button class="btn btn-primary btn-md"><i class="fa fa-plus"> </i> Add Project Experience</button></a>
+                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd"><i class="fa fa-plus"> </i> Add Research Outcome</button>
             </div><!-- /.box-header -->
             <div class="box-body">
               <table class="table table-bordered table-striped">
                 <thead>
-                  <tr>
-                    <th>ID</th>             	
+                  <tr>          	
                     <th>Nama Luaran</th>
                     <th>Tahun</th>
                     <th>Deskripsi</th>
@@ -23,7 +22,6 @@
                 </thead>
                 <tbody>
                 	<tr>
-                        <td>01</td>
                         <td>Luaran 1</td>
                         <td>1998</td>
                         <td>Untuk Kegiatan Luar 1</td>
@@ -35,7 +33,6 @@
                         </td>
                 	</tr>
                 	<tr>
-                        <td>02</td>
                         <td>Luaran 2</td>
                         <td>2005</td>
                         <td>Untuk Kegiatan Luar 2</td>
@@ -47,7 +44,6 @@
                         </td>
                 	</tr>
                 	<tr>
-                        <td>03</td>
                         <td>Luaran 3</td>
                         <td>2009</td>
                         <td>Untuk Kegiatan Luar 3</td>
@@ -69,37 +65,30 @@
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title">Add Project Experience</h4>
+            <h4 class="modal-title">Add Research Outcome</h4>
           </div>
           <div class="modal-body">
              <div class="form-group">
-                <label>Nama Project</label>
-                <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
+                <label>Nama Luaran</label>
+                <input type="text" class="form-control" name="namakegiatan" placeholder="Masukan Nama Luaran">
               </div>
-
               <div class="form-group">
                 <label>Tahun</label>
                 <div class="input-group date">
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" class="form-control pull-right" id="datepicker">
+                  <input type="text" class="form-control pull-right" id="datepicker" placeholder="DD-MM-YYY">
                 </div>
               </div>
 
               <div class="form-group">
-                <label>Kegunaan Teknologi</label>
-                <input type="text" class="form-control" name="kegunaankegiatan" placeholder="Masukan Kegunaan Teknologi">
-              </div>
-
-              <div class="form-group">
                 <label>Deskripsi</label>
-                <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi">
+                <input type="text" class="form-control" name="deskripsi" placeholder="Masukan Deskripsi">
               </div>
-
               <div class="form-group">
-                <label>Url Project</label>
-                <input type="text" class="form-control" name="url" placeholder="Masukan Link Project atau Link Portofolio">
+                <label>Kategori</label>
+                <input type="text" class="form-control" name="kategori" placeholder="Masukan Kategori">
               </div>
           </div>
           <div class="modal-footer">
@@ -115,37 +104,30 @@
 	        <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-		        <h4 class="modal-title">Edit Project Experience</h4>
+		        <h4 class="modal-title">Edit Research Outcome</h4>
 		      </div>
 		      <div class="modal-body">
              <div class="form-group">
-                <label>Nama Project</label>
-                <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
+                <label>Nama Luaran</label>
+                <input type="text" class="form-control" name="namakegiatan" placeholder="Masukan Nama Luaran">
               </div>
-
               <div class="form-group">
                 <label>Tahun</label>
                 <div class="input-group date">
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" class="form-control pull-right" id="datepicker">
+                  <input type="text" class="form-control pull-right" id="datepicker" placeholder="DD-MM-YYY">
                 </div>
               </div>
 
               <div class="form-group">
-                <label>Kegunaan Teknologi</label>
-                <input type="text" class="form-control" name="kegunaankegiatan" placeholder="Masukan Kegunaan Teknologi">
-              </div>
-
-              <div class="form-group">
                 <label>Deskripsi</label>
-                <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi">
+                <input type="text" class="form-control" name="deskripsi" placeholder="Masukan Deskripsi">
               </div>
-
               <div class="form-group">
-                <label>Url Project</label>
-                <input type="text" class="form-control" name="url" placeholder="Masukan Link Project atau Link Portofolio">
+                <label>Kategori</label>
+                <input type="text" class="form-control" name="kategori" placeholder="Masukan Kategori">
               </div>
           </div>
           <div class="modal-footer">
