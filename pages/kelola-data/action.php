@@ -11,7 +11,7 @@
 	 		$do->store($_POST['nama_education'], $_POST['tahun'], $_POST['kota']);
 	 		header("location:education.php");
 	 	} elseif ($action == "update") {
-	 		$do->update($_POST['id'], $_POST['namaEdu'], $_POST['Tahun']);
+	 		$do->update($_POST['id_education'], $_POST['nama_education'],$_POST['tahun'], $_POST['kota']);
 	 		header("location:education.php");
 	 	} elseif ($action == "delete") {
 	 		$do->delete($_POST['id_education']);

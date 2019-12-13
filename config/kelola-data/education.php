@@ -16,7 +16,7 @@
 			else $_SESSION['message'] = "edit-failed";
 		}
 
-		function delete ($id) {
+		function delete ($id_education) {
 			include $this->dir;
 			$data = mysqli_query($connection, "DELETE FROM " . $this->table . " WHERE id_education='$id_education'");
 			session_start();
