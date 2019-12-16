@@ -1,48 +1,33 @@
+<?php 
+  if(isset($_SESSION['user'])) {
+?>
 <header class="main-header">
-  <!-- Logo -->
-  <a href="../../index.php" class="logo"><b>Mahasiswa</b></a>
-  <!-- Header Navbar: style can be found in header.less -->
+  <a href="../../connector.php?page=dashboard" class="logo"><b>Mahasiswa</b></a>
   <nav class="navbar navbar-static-top" role="navigation">
-    <!-- Sidebar toggle button-->
     <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
       <span class="sr-only">Toggle navigation</span>
     </a>
     <div class="navbar-custom-menu">
       <ul class="nav navbar-nav">
-        <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <img src="../../assets/dist/img/user2-160x160.jpeg" class="user-image" alt="User Image"/>
-            <span class="hidden-xs">Iwan Sinanto Ate</span>
+            <span class="hidden-xs"><?php echo $_SESSION['nama']; ?></span>
           </a>
           <ul class="dropdown-menu">
-            <!-- User image -->
             <li class="user-header">
               <img src="../../assets/dist/img/user2-160x160.jpeg" class="img-circle" alt="User Image" />
               <p>
-                Iwan Sinanto Ate- Mahasiswa
-                <small>Ilmu Komputer, 2019</small>
+                <?php echo $_SESSION['nama']; ?>
+                <small>Ilmu Komputer. 2019</small>
               </p>
             </li>
-            <!-- Menu Body -->
-            <li class="user-body">
-              <div class="col-xs-4 text-center">
-                <a href="#">Followers</a>
-              </div>
-              <div class="col-xs-4 text-center">
-                <a href="#">Sales</a>
-              </div>
-              <div class="col-xs-4 text-center">
-                <a href="#">Friends</a>
-              </div>
-            </li>
-            <!-- Menu Footer-->
             <li class="user-footer">
               <div class="pull-left">
                 <a href="#" class="btn btn-default btn-flat">Profile</a>
               </div>
               <div class="pull-right">
-                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                <a href="../public/action.php?table=user&&action=logout" class="btn btn-default btn-flat">Sign out</a>
               </div>
             </li>
           </ul>
@@ -51,3 +36,26 @@
     </div>
   </nav>
 </header>
+<?php 
+  } else {
+?>
+<header class="main-header">
+  <a href="../../connector.php?page=dashboard" class="logo"><b>Mahasiswa</b></a>
+  <nav class="navbar navbar-static-top" role="navigation">
+    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <span class="sr-only">Toggle navigation</span>
+    </a>
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <li class="dropdown user user-menu">
+          <a href="../../connector.php?page=login">
+            <span class="hidden-xs">Login</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<?php
+  }
+?>

@@ -59,7 +59,9 @@
 				$_SESSION['page'] = "kelola";
 				$_SESSION['subpage'] = "training-workshop-seminar";
 				break;
-			
+			case 'login':
+				header('location:pages/public/login.php');
+				break;					
 			default:
 				echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
 				break;

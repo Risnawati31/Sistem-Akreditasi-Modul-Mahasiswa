@@ -3,25 +3,25 @@
 		var $table	= "user";
 		var $dir	= "../../config/database.php";
 	 
-		function store ($email, $password, $level) {
+		function store ($email, $password) {
 			include $this->dir;
-			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(email, password, level) VALUES('$email', '$password', '$level')");
+			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(email, password) VALUES('$email', '$password')");
 			session_start();
 			if ($data) $_SESSION['message'] = "save-success";
 			else $_SESSION['message'] = "save-failed";
 		}
 
-		function update ($id, $email, $password, $level) {
+		function update ($id_user, $email, $password) {
 			include $this->dir;
-			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET email='$email', password='$password', level='$level' WHERE id='$id'");
+			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET email='$email', password='$password' WHERE id_user='$id_user'");
 			session_start();
 			if ($data) $_SESSION['message'] = "edit-success";
 			else $_SESSION['message'] = "edit-failed";
 		}
 
-		function delete ($id) {
+		function delete ($id_user) {
 			include $this->dir;
-			$data = mysqli_query($connection, "DELETE FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "DELETE FROM " . $this->table . " WHERE id_user='$id_user'");
 			session_start();
 			if ($data) $_SESSION['message'] = "delete-success";
 			else $_SESSION['message'] = "delete-failed";
@@ -35,17 +35,17 @@
 			return $result;
 		}
 
-		function search_by_id ($id) {
+		function search_by_id ($id_user) {
 			include $this->dir;
-			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id_user='$id_user'");
 			if(mysqli_num_rows($data) == 0) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;
 		}
 		
-		function search_field_by_id ($id, $field) {
+		function search_field_by_id ($id_user, $field) {
 			include $this->dir;
-			$data = mysqli_query($connection, "SELECT '$field' FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "SELECT '$field' FROM " . $this->table . " WHERE id_user='$id_user'");
 			if(mysqli_num_rows($data) == 0) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;

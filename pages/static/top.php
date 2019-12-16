@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  include '../static/current-page.php'; 
+?>
 <!DOCTYPE html>
 <html>
   <?php include '../static/template-top.php'; ?>

@@ -27,8 +27,8 @@
                 <tbody>
                     <?php
                         $no = 1;
-                        if($db->show() != null) {
-                            foreach($db->show() as $show) {
+                        if($db->search_by_field('id_user' , $_SESSION['user']) != null) {
+                            foreach($db->search_by_field('id_user' , $_SESSION['user']) as $show) {
                     ?>
                       <tr>
                         <td width="4%"><?php echo $no++; ?></td>
@@ -61,6 +61,8 @@
             <h4 class="modal-title">Add Education</h4>
           </div>
           <form action="action.php?table=education&action=store" method="post">
+
+             <input type="hidden" name="id_user" value="<?php echo $_SESSION['user']; ?>">
               <div class="modal-body row">
                 <div class="col-sm-6">
                  <div class="form-group">
@@ -80,13 +82,6 @@
                     <input type="text" class="form-control" name="kota" placeholder="Masukan Kota" required>
                   </div>
                  </div> 
-                 <div class="col-sm-12">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Check me out
-                    </label>
-                  </div>
-                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
@@ -99,8 +94,8 @@
 
     <?php
                         $no = 1;
-                        if($db->show() != null) {
-                            foreach($db->show() as $show) {
+                        if($db->search_by_field('id_user' , $_SESSION['user']) != null) {
+                            foreach($db->search_by_field('id_user' , $_SESSION['user']) as $show) {
                     ?>
      
     <div id="modalEdit-<?php echo $show['id_education']; ?>" class="modal fade" role="dialog">

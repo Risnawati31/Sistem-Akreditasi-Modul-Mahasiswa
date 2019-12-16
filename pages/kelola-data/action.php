@@ -8,7 +8,7 @@
 		$do = new education();
 
 	 	if ($action == "store") {
-	 		$do->store($_POST['nama_education'], $_POST['tahun'], $_POST['kota']);
+	 		$do->store($_POST['nama_education'], $_POST['tahun'], $_POST['kota'], $_POST['id_user']);
 	 		header("location:education.php");
 	 	} elseif ($action == "update") {
 	 		$do->update($_POST['id_education'], $_POST['nama_education'],$_POST['tahun'], $_POST['kota']);

@@ -1,15 +1,14 @@
-<?php
-  session_start();
-  if(isset($_SESSION['page']) && isset($_SESSION['subpage'])) {
-?>
   <aside class="main-sidebar">
     <section class="sidebar">
+      <?php 
+      if(isset($_SESSION['user'])) {
+    ?>
       <div class="user-panel">
         <div class="pull-left image">
           <img src="../../assets/dist/img/user2-160x160.jpeg" class="img-circle" alt="User Image" />
         </div>
         <div class="pull-left info">
-          <p>Iwan Sinanto Ate</p>
+          <p><?php echo $_SESSION['nama']; ?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -21,6 +20,9 @@
           </span>
         </div>
       </form>
+      <?php
+      }
+    ?>
       <ul class="sidebar-menu">
         <li>
           <a href="../../connector.php?page=dashboard">
@@ -113,20 +115,6 @@
 
           </ul>
            </li>
-        <?php
-          if($_SESSION['page']=='public') {
-            echo "<li class='treeview active'>";
-          } else { 
-            echo "<li class='treeview'>";
-          }
-        ?>
-          <ul class="treeview-menu">          </ul>
-        </li>
       </ul>
     </section>
   </aside>
-<?php
-} else {
-  header('location:index.php');
-}
-?>
