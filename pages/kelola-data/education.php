@@ -1,6 +1,5 @@
 <?php include '../static/top.php'; 
-
-          include '../../config/kelola-data/education.php';
+        include '../../config/kelola-data/education.php';
         $db     = new education();
           $table    = 'education';?>
     <section class="content">
@@ -8,7 +7,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">List Education</h3>
+              <h3 class="box-title">Education</h3>
               <div class="pull-right box-tools">
                 <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd"><i class="fa fa-plus"> </i> Add Education</button>
             </div>
@@ -56,7 +55,7 @@
       <div id="modalAdd" class="modal fade" role="dialog">
       <div class="modal-dialog">
           <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header btn-primary">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <h4 class="modal-title">Add Education</h4>
           </div>
@@ -101,7 +100,7 @@
     <div id="modalEdit-<?php echo $show['id_education']; ?>" class="modal fade" role="dialog">
       <div class="modal-dialog">
           <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header btn-warning">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <h4 class="modal-title">Edit Education</h4>
           </div>

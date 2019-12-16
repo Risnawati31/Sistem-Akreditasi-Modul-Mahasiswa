@@ -1,4 +1,7 @@
-<?php include '../static/top.php'; ?>
+<?php include '../static/top.php'; 
+include '../../config/kelola-data/project_experience.php';
+        $db     = new project_experience();
+          $table    = 'project_experience';?>
     <section class="content">
       <div class="row">
         <div class="col-xs-12">
@@ -6,59 +9,45 @@
             <div class="box-header">
               <h3 class="box-title">Project Experience</h3>
               <div class="pull-right box-tools">
-                <!-- <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd" title="" data-original-title="Remove"><i class="fa fa-plus"> </i> Add Writing Experience</button> -->
                 <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAdd"><i class="fa fa-plus"> </i> Add Project Experience</button>
             </div><!-- /.box-header -->
             <div class="box-body">
               <table class="table table-bordered table-striped">
                 <thead>
-                  <tr>          	
+                  <tr>        
+                    <th>No</th>  	
                     <th>Nama Project</th>
                     <th>Tahun</th>
                     <th>Kegunaan Teknologi</th>
                     <th>Deskripsi</th>
-                    <th>URL</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
-                	<tr>
-                        <td>Sistem Akreditasi</td>
-                        <td>2018</td>
-                        <td>Mengukur Akreditasi</td>
-                        <td>Untuk Kegiatan Belajar</td>
-                        <td>WWW.COM</td>
+                    <?php
+                        $no = 1;
+                        if($db->search_by_field('id_user' , $_SESSION['user']) != null) {
+                            foreach($db->search_by_field('id_user' , $_SESSION['user']) as $show) {
+                    ?>
+                      <tr>
+                        <td width="4%"><?php echo $no++; ?></td>
+                        <td><?php echo $show['nama_project']; ?></td>
+                        <td><?php echo $show['tahun']; ?></td>
+                        <td><?php echo $show['tools_teknologi']; ?></td>
+                         <td><?php echo $show['deskripsi']; ?></td>
                         <td>
-                            <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
+                            <a href="#editProject" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit-<?php echo $show['id_project_experience']; ?>"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
-                            <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
-                        </td>
-                	</tr>
-                	<tr>
-                        <td>Sistem Akreditasi</td>
-                        <td>2018</td>
-                        <td>Mengukur Akreditasi</td>
-                        <td>Untuk Kegiatan Belajar</td>
-                        <td>WWW.COM</td>
-                        <td>
-                            <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
+                            <a href="#deleteProject" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete-<?php echo $show['id_project_experience']; ?>"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
 
-                            <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
-                        </td>
-                	</tr>
-                	<tr>
-                        <td>Sistem Akreditasi</td>
-                        <td>2018</td>
-                        <td>Mengukur Akreditasi</td>
-                        <td>Untuk Kegiatan Belajar</td>
-                        <td>WWW.COM</td>
-                        <td>
-                            <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
-                            <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
                         </td>
-                	</tr>
-                </tbody>
+                      </tr> 
+                              <?php 
+                                      }
+                                  }
+                              ?> 
+                    </tbody>
               </table>
             </div><!-- /.box-body -->
           </div><!-- /.box -->
@@ -67,114 +56,116 @@
      <div id="modalAdd" class="modal fade" role="dialog">
       <div class="modal-dialog">
           <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header btn-primary">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <h4 class="modal-title">Add Project Experience</h4>
           </div>
+          <form action="action.php?table=project_experience&action=store" method="post">
+          <input type="hidden" name="id_user" value="<?php echo $_SESSION['user']; ?>">    
+
           <div class="modal-body">
              <div class="form-group">
                 <label>Nama Project</label>
-                <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
+                <input type="text" class="form-control" name="nama_project" placeholder="Masukan Nama Project" required>
               </div>
 
               <div class="form-group">
                 <label>Tahun</label>
-                <div class="input-group date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
-                  </div>
-                  <input type="text" class="form-control pull-right" id="datepicker">
-                </div>
+                <input type="text" class="form-control" name="tahun" placeholder="Masukan Tahun" required>
               </div>
-
+              
               <div class="form-group">
                 <label>Kegunaan Teknologi</label>
-                <input type="text" class="form-control" name="kegunaankegiatan" placeholder="Masukan Kegunaan Teknologi">
+                <input type="text" class="form-control" name="tools_teknologi" placeholder="Masukan Kegunaan Teknologi" required>
               </div>
 
               <div class="form-group">
                 <label>Deskripsi</label>
-                <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi">
+                <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi" required>
               </div>
-
-              <div class="form-group">
-                <label>Url Project</label>
-                <input type="text" class="form-control" name="url" placeholder="Masukan Link Project atau Link Portofolio">
-              </div>
+              
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-            <button type="button" class="btn btn-primary">Simpan</button>
+            <button type="submit" class="btn btn-primary">Simpan</button>
           </div>
+        </form>
         </div>
       </div>
     </div>
 
+    <?php
+       $no = 1;
+       if($db->search_by_field('id_user' , $_SESSION['user']) != null) {
+          foreach($db->search_by_field('id_user' , $_SESSION['user']) as $show) {
+    ?>
+
     
 
-    <div id="modalEdit" class="modal fade" role="dialog">
+    <div id="modalEdit-<?php echo $show['id_project_experience']; ?>" class="modal fade" role="dialog">
   		<div class="modal-dialog">
 	        <div class="modal-content">
-		      <div class="modal-header">
+		      <div class="modal-header btn-warning">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 		        <h4 class="modal-title">Edit Project Experience</h4>
 		      </div>
+          <form action="action.php?table=project_experience&action=update" method="post">
 		      <div class="modal-body">
+            <input type="hidden" name="id_project_experience" value="<?php echo $show['id_project_experience'] ?>">
              <div class="form-group">
                 <label>Nama Project</label>
-                <input type="text" class="form-control" name="namaproject" placeholder="Masukan Nama Project">
+                <input type="text" class="form-control" name="nama_project" placeholder="" value="<?php echo $show['nama_project'] ?>" >
               </div>
 
               <div class="form-group">
                 <label>Tahun</label>
-                <div class="input-group date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
-                  </div>
-                  <input type="text" class="form-control pull-right" id="datepicker">
-                </div>
+                <input type="text" class="form-control" name="tahun" placeholder="" value="<?php echo $show['tahun'] ?>" >
               </div>
 
               <div class="form-group">
                 <label>Kegunaan Teknologi</label>
-                <input type="text" class="form-control" name="kegunaankegiatan" placeholder="Masukan Kegunaan Teknologi">
+                <input type="text" class="form-control" name="tools_teknologi" placeholder="" value="<?php echo $show['tools_teknologi'] ?>">
               </div>
 
               <div class="form-group">
                 <label>Deskripsi</label>
-                <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi">
-              </div>
-
-              <div class="form-group">
-                <label>Url Project</label>
-                <input type="text" class="form-control" name="url" placeholder="Masukan Link Project atau Link Portofolio">
+                <input type="text" class="form-control" name="deskripsi" placeholder="" value="<?php echo $show['deskripsi'] ?>">
               </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-            <button type="button" class="btn btn-primary">Simpan</button>
+            <button type="submit" class="btn btn-primary">Simpan</button>
           </div>
-		      </div>
+        </form>
+		    </div>
       </div>
     </div>
 
-		<div id="modalDelete" class="modal modal-danger fade" role="dialog">
-	  		<div class="modal-dialog">
-		        <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-			        <h4 class="modal-title">Delete Project</h4>
-			      </div>
-			      <div class="modal-body">
-			        <p>Apakah kamu ingin menghapus data ini?</p>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Tutup</button>
-			        <button type="button" class="btn btn-outline">YA</button>
-			      </div>
-			    </div>
-		    </div>
-	    </div>
+		<div id="modalDelete-<?php echo $show['id_project_experience']; ?>"  class="modal modal-danger fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="Tutup" data-dismiss="modal" aria-label="Tutup"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Delete Project Experience</h4>
+            </div>
+            <form action="action.php?table=project_experience&action=delete" method="post">
+                <input name="id_project_experience" type="hidden" value="<?php echo $show['id_project_experience']; ?>">
+                <div class="modal-body">
+                  <p>Apakah kamu ingin menghapus data ini?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Tutup</button>
+                  <button type="submit" class="btn btn-outline">YA</button>
+                </div>
+           </form>
+          </div>
+        </div>
+      </div>
+
+     <?php 
+                                      }
+                                  }
+                              ?>
 
       </div><!-- /.row -->
     </section>

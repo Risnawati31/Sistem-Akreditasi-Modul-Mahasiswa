@@ -1,6 +1,6 @@
 <?php
-	class penelitian {
-		var $table	= "penelitian";
+	class project_experience {
+		var $table	= "project_experience";
 		var $dir	= "../../config/database.php";
 
 		function show() {
@@ -11,17 +11,17 @@
 			return $result;
 		}
 
-		function search_by_id ($id) {
+		function search_by_id ($id_project_experience) {
 			include $this->dir;
-			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id_project_experience='$id_project_experience'");
 			if(mysqli_num_rows($data) == 0) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;
 		}
 		
-		function search_field_by_id ($id, $field) {
+		function search_field_by_id ($id_project_experience, $field) {
 			include $this->dir;
-			$data = mysqli_query($connection, "SELECT '$field' FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "SELECT '$field' FROM " . $this->table . " WHERE id_project_experience='$id_project_experience'");
 			if(mysqli_num_rows($data) == 0) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2019 at 08:16 AM
+-- Generation Time: Dec 16, 2019 at 07:28 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.10
 
@@ -41,7 +41,7 @@ CREATE TABLE `education` (
 --
 
 INSERT INTO `education` (`id_education`, `nama_education`, `tahun`, `kota`, `id_user`) VALUES
-(13, 'sma 4 tkn', '2019', 'Aceh', 1),
+(13, 'MAN 1 ACEH TENGAH', '2017', 'Aceh', 1),
 (16, 'ESQ BUSINESS SCHOOL', '2021', 'JAKARTA', 2);
 
 -- --------------------------------------------------------
@@ -58,6 +58,13 @@ CREATE TABLE `leadership_experience` (
   `deskripsi` text NOT NULL,
   `id_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `leadership_experience`
+--
+
+INSERT INTO `leadership_experience` (`id_leadership_experience`, `nama_kegiatan`, `posisi`, `tahun`, `deskripsi`, `id_user`) VALUES
+(3, 'Pemilihan Raya BEM', 'Penyelenggara', '2019', 'Ajang demokrasi Pemilihan Ketua Bem', 1);
 
 -- --------------------------------------------------------
 
@@ -110,6 +117,13 @@ CREATE TABLE `project_experience` (
   `deskripsi` text NOT NULL,
   `id_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `project_experience`
+--
+
+INSERT INTO `project_experience` (`id_project_experience`, `nama_project`, `tahun`, `tools_teknologi`, `deskripsi`, `id_user`) VALUES
+(11, 'Sistem Alumni', '2018', 'Pendataan Alumni', 'Karna tahun sebelumnya input data alumni dengan menual', 1);
 
 -- --------------------------------------------------------
 
@@ -206,14 +220,21 @@ CREATE TABLE `writing_experience` (
   `judul_karya` varchar(30) NOT NULL,
   `nama_dosen` varchar(30) NOT NULL,
   `nama_jurnal` varchar(30) NOT NULL,
-  `tahun` year(4) NOT NULL,
+  `tahun` varchar(4) NOT NULL,
   `volume` varchar(30) NOT NULL,
-  `halaman` varchar(30) NOT NULL,
+  `halaman` int(30) NOT NULL,
   `link` varchar(30) NOT NULL,
-  `upload_file` longblob NOT NULL,
+  `upload_file` text NOT NULL,
   `kategori` varchar(30) NOT NULL,
   `id_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `writing_experience`
+--
+
+INSERT INTO `writing_experience` (`id_writing_experience`, `judul_karya`, `nama_dosen`, `nama_jurnal`, `tahun`, `volume`, `halaman`, `link`, `upload_file`, `kategori`, `id_user`) VALUES
+(5, 'Penelitan Sawit', 'Ahlijati Nuraminah M.Kom ', 'Probabilitas Sawit', '2019', '5', 150, 'www.sawit.com', 'FORM PENILAIAN.docx', 'LPPM', 1);
 
 --
 -- Indexes for dumped tables
@@ -309,7 +330,7 @@ ALTER TABLE `education`
 -- AUTO_INCREMENT for table `leadership_experience`
 --
 ALTER TABLE `leadership_experience`
-  MODIFY `id_leadership_experience` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_leadership_experience` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `personal_details`
@@ -327,7 +348,7 @@ ALTER TABLE `personal_sertification`
 -- AUTO_INCREMENT for table `project_experience`
 --
 ALTER TABLE `project_experience`
-  MODIFY `id_project_experience` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_project_experience` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `research_outcome`
@@ -363,7 +384,7 @@ ALTER TABLE `working_experience`
 -- AUTO_INCREMENT for table `writing_experience`
 --
 ALTER TABLE `writing_experience`
-  MODIFY `id_writing_experience` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_writing_experience` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
