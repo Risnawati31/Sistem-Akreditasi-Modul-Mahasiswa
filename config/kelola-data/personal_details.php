@@ -1,27 +1,27 @@
 <?php
-	class penelitian {
-		var $table	= "penelitian";
+	class personal_details {
+		var $table	= "personal_details";
 		var $dir	= "../../config/database.php";
 	 
-		function store ($tema, $judul, $deskripsi, $tanggal, $tempat, $sumber_pembiayaan, $biaya, $evaluasi, $id_matakuliah, $file, $id_user) {
+		function store ($nim, $nama, $tempat_lahir, $tanggal_lahir, $no_hp, $email, $alamat, $status_pernikahan, $prodi, $angkatan,$sosmed, $id_user) {
 			include $this->dir;
-			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(tema, judul, deskripsi, tanggal, tempat, sumber_pembiayaan, biaya, evaluasi, id_matakuliah, file, id_user) VALUES('$tema', '$judul', '$deskripsi', '$tanggal', '$tempat', '$sumber_pembiayaan', '$biaya', '$evaluasi', '$id_matakuliah', '$file', '$id_user')");
+			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(nim, nama, tempat_lahir, tanggal_lahir, no_hp,email, alamat, status_pernikahan, prodi, angkatan, sosmed, id_user) VALUES('$nim', '$nama', '$tempat_lahir', '$tanggal_lahir', '$no_hp', '$email', '$alamat', '$status_pernikahan', '$prodi', '$angkatan', '$sosmed', '$id_user')");
 			session_start();
 			if ($data) $_SESSION['message'] = "save-success";
 			else $_SESSION['message'] = "save-failed";
 		}
 
-		function update ($id, $tema, $judul, $deskripsi, $tanggal, $tempat, $sumber_pembiayaan, $biaya, $evaluasi, $id_matakuliah, $file) {
+		function update ($id_personal_details, $nim, $nama, $tempat_lahir, $tanggal_lahir, $no_hp, $email, $alamat, $status_pernikahan, $prodi, $angkatan, $sosmed) {
 			include $this->dir;
-			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET tema='$tema', judul='$judul', deskripsi='$deskripsi', tanggal='$tanggal', tempat='$tempat', sumber_pembiayaan='$sumber_pembiayaan', biaya='$biaya', evaluasi='$evaluasi', id_matakuliah='$id_matakuliah', file='$file' WHERE id='$id'");
+			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET nim='$nim', nama='$nama', tempat_lahir='$tempat_lahir',tanggal_lahir='$tanggal_lahir', no_hp='$no_hp', email='$email', alamat='$alamat', status_pernikahan='$status_pernikahan', prodi='$prodi', angkatan='$angkatan', sosmed='$sosmed' WHERE id_personal_details='$id_personal_details'");
 			session_start();
 			if ($data) $_SESSION['message'] = "edit-success";
 			else $_SESSION['message'] = "edit-failed";
 		}
 
-		function delete ($id) {
+		function delete ($id_personal_details) {
 			include $this->dir;
-			$data = mysqli_query($connection, "DELETE FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "DELETE FROM " . $this->table . " WHERE id_personal_details='$id_personal_details'");
 			session_start();
 			if ($data) $_SESSION['message'] = "delete-success";
 			else $_SESSION['message'] = "delete-failed";
@@ -35,17 +35,17 @@
 			return $result;
 		}
 
-		function search_by_id ($id) {
+		function search_by_id ($id_personal_details) {
 			include $this->dir;
-			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id_personal_details='$id_personal_details'");
 			if(mysqli_num_rows($data) == 0) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;
 		}
 		
-		function search_field_by_id ($id, $field) {
+		function search_field_by_id ($id_personal_details, $field) {
 			include $this->dir;
-			$data = mysqli_query($connection, "SELECT '$field' FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "SELECT '$field' FROM " . $this->table . " WHERE id_personal_details='$id_personal_details'");
 			if(mysqli_num_rows($data) == 0) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;
