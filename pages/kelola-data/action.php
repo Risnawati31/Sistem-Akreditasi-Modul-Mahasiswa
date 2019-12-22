@@ -73,7 +73,21 @@
 	 		$do->delete($_POST['id_personal_details']);
 			header("location:personal-details.php");
 	 	}
-	} elseif ($table == "hasil-kerjasama") {
+	}elseif ($table == "skills") {
+	 	include $dir . 'skill-experience.php';
+		$do = new skills();
+
+	 	if ($action == "store") {
+	 		$do->store($_POST['nama_skills'], $_POST['tool_skills'], $_POST['id_user']);
+	 		header("location:skill-experience.php");
+	 	} elseif ($action == "update") {
+	 		$do->update($_POST['id_skills'], $_POST['nama_skills'],$_POST['tool_skills']);
+	 		header("location:skill-experience.php");
+	 	} elseif ($action == "delete") {
+	 		$do->delete($_POST['id_skills']);
+			header("location:skill-experience.php");
+	 	}
+	 }elseif ($table == "hasil-kerjasama") {
 	 	include $dir . 'hasil-kerjasama.php';
 		$do = new hasilKerjasama();
 
@@ -87,7 +101,21 @@
 	 		$do->delete($_POST['id']);
 			header("location:hasil-kerjasama.php");
 	 	}
-	} elseif ($table == "user") {
+	}elseif ($table == "personal_sertification") {
+	 	include $dir . 'personal_sertification.php';
+		$do = new personal_sertification();
+	 	if ($action == "store") {
+	 		$do->store($_POST['nama_sertification'], $_POST['nama_lembaga'],  $_POST['tahun'], $_POST['upload_file'], $_POST['id_user']);
+	 		header("location:personal-sertification.php");
+	 	} elseif ($action == "update") {
+	 		$do->update($_POST['id_personal_sertification'], $_POST['nama_sertification'],$_POST['nama_lembaga'], $_POST['tahun'], $_POST['upload_file'], $_POST['id_user']);
+	 		header("location:personal-sertification.php");
+	 	} elseif ($action == "delete") {
+	 		$do->delete($_POST['id_personal_sertification']);
+			header("location:personal-sertification.php");
+	 	}
+	 }
+	elseif ($table == "user") {
 	 	include $dir . 'user.php';
 		$do = new user();
 
@@ -98,8 +126,23 @@
 	 		$do->update($_POST['id'], $_POST['email'], $_POST['password'], $_POST['level']);
 	 		header("location:user.php");
 	 	} elseif ($action == "delete") {
-	 		$do->delete($_POST['id']);
+	 		$do->delete($_POST['id_user']);
 			header("location:user.php");
 	 	}
-	}
+	}elseif ($table == "research_outcome") {
+	 	include $dir . 'research-outcome.php';
+		$do = new research_outcome();
+
+	 	if ($action == "store") {
+	 		$do->store($_POST['nama_research_outcome'], $_POST['tahun'], $_POST['deskripsi'],$_POST['kategori'],  $_POST['id_user']);
+	 		header("location:research-outcome.php");
+	 	} elseif ($action == "update") {
+	 		$do->update($_POST['id_research_outcome'], $_POST['nama_research_outcome'],$_POST['tahun'],$_POST['deskripsi'],$_POST['kategori']);
+	 		header("location:research-outcome.php");
+	 	} elseif ($action == "delete") {
+	 		$do->delete($_POST['id_research_outcome']);
+			header("location:research-outcome.php");
+	 	}
+	 }
+
 ?>

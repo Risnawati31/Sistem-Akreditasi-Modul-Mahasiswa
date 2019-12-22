@@ -3,17 +3,15 @@
 		var $table	= "personal_sertification";
 		var $dir	= "../../config/database.php";
 
-		function store ($nama_sertification, $nama_lembaga, $tahun, $upload_file, $id_user) {
+		function store ($nama_sertification, $nama_lembaga,$tahun,$upload_file, $id_user) {
 			include $this->dir;
-			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(nama_sertification, nama_lembaga, tahun, upload_file, id_user) VALUES('$nama_sertification', '$nama_lembaga', '$tahun', '$upload_file','$id_user')");
-			session_start();
-			if ($data) $_SESSION['message'] = "save-success";
-			else $_SESSION['message'] = "save-failed";
+			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(nama_sertification, nama_lembaga, tahun, upload_file, id_user) VALUES('$nama_sertification', '$nama_lembaga','$tahun', 'upload_file' '$id_user')");
 		}
 
-		function update ($id_personal_sertification, $nama_sertification, $nama_lembaga, $tahun, $deskripsi) {
+		function update ($id_personal_sertification,$nama_sertification, $nama_lembaga,$tahun,$upload_file) {
 			include $this->dir;
-			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET nama_sertification='$nama_sertification', nama_lembaga='$nama_lembaga', tahun='$tahun', upload_file='$upload_file' WHERE id_personal_sertification='$id_personal_sertification'");
+			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET nama_sertification='$nama_sertification', nama_lembaga='$nama_lembaga', tahun='$tahun', upload_file='upload_file' WHERE id_personal_sertification
+				='$id_personal_sertification'");
 			session_start();
 			if ($data) $_SESSION['message'] = "edit-success";
 			else $_SESSION['message'] = "edit-failed";
@@ -30,7 +28,7 @@
 		function show() {
 			include $this->dir;
 			$data = mysqli_query($connection, "SELECT * FROM " . $this->table);
-			if(mysqli_num_rows($data) == 0) return null;
+			//if(mysqli_num_rows($data) == 0 || $data) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;
 		}
