@@ -40,7 +40,7 @@
 				$_SESSION['subpage'] = "research-outcome";
 				break;
 			case 'kelola-professional-certification':
-				header('location:pages/kelola-data/professional-certification.php');
+				header('location:pages/kelola-data/personal-sertification.php');
 				$_SESSION['page'] = "kelola";
 				$_SESSION['subpage'] = "professional-certification";
 				break;	

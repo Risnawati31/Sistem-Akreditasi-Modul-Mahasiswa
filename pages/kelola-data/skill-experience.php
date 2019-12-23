@@ -1,4 +1,8 @@
-<?php include '../static/top.php'; ?>
+<?php include '../static/top.php'; 
+
+          include '../../config/kelola-data/skill-experience.php';
+        $db     = new skills();
+          $table    = 'skills';?>
     <section class="content">
       <div class="row">
         <div class="col-xs-12">
@@ -13,126 +17,138 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th>Nama Skills</th>
-                    <th>Nama Tools</th>
+                    <th>No</th>
+                    <th>Nama Skill</th>
+                    <th>Tool Skill</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                      <td>Video Editor</td>
-                        <td>Adobe Premiere</td>
+                    <?php
+                        $no = 1;
+                        if($db->search_by_field('id_user' , $_SESSION['user']) != null) {
+                            foreach($db->search_by_field('id_user' , $_SESSION['user']) as $show) {
+                    ?>
+                      <tr>
+                        <td width="4%"><?php echo $no++; ?></td>
+                        <td><?php echo $show['nama_skills']; ?></td>
+                        <td><?php echo $show['tool_skills']; ?></td>
+                      
                         <td>
-                            <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
+                            <a href="#editSkills" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit-<?php echo $show['id_skills']; ?>"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
-                            <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
-                        </td>
-                  </tr>
-                  <tr>
-                      <td>Database</td>
-                        <td>MySQL</td>
-                        <td>
-                            <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
+                            <a href="#deleteSkills" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete-<?php echo $show['id_skills']; ?>"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
 
-                            <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
-                        </td>
-                  </tr>
-                  <tr>
-                      <td>Web Programmer</td>
-                        <td>HTML</td>
-                        <td>
-                            <a href="#editPersonalDetail" class="btn  btn-warning btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i> Edit</a>
 
-                            <a href="#deletePersonalDetail" class="btn  btn-danger btn-md" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash" data-toggle="tooltip" title="Delete"></i> Delete</a>
                         </td>
-                  </tr>
-                </tbody>
+                      </tr> 
+                              <?php 
+                                      }
+                                  }
+                              ?> 
+                    </tbody>
               </table>
             </div><!-- /.box-body -->
           </div><!-- /.box -->
         </div><!-- /.col -->
 
-
-     <div id="modalAdd" class="modal fade" role="dialog">
+      <div id="modalAdd" class="modal fade" role="dialog">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <h4 class="modal-title">Add Skills</h4>
           </div>
-          <div class="modal-body row">
-            <div class="col-sm-12">
-            <div class="form-group">
-                <label>Nama Skills</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama Skill">
+          <form action="action.php?table=skills&action=store" method="post">
+
+             <input type="hidden" name="id_user" value="<?php echo $_SESSION['user']; ?>">
+              <div class="modal-body row">
+                <div class="col-sm-6">
+                 <div class="form-group">
+                    <label>Nama Skill</label>
+                    <input type="text" class="form-control" name="nama_skills" placeholder="Masukan Nama" required>
+                  </div>
+                 </div> 
+                 <div class="col-sm-6"> 
+                  <div class="form-group">
+                    <label>Tool Skills</label>
+                    <input type="text" class="form-control" name="tool_skills" placeholder="Masukan Tool" required>
+                  </div>
+                </div>
+                
               </div>
-            </div>  
-            <div class="col-sm-12">  
-              <div class="form-group">
-                <label>Nama Tools</label>
-                <input type="text" class="form-control" name="tahun" placeholder="Masukan Nama Tools">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
               </div>
-            </div> 
-            <div class="col-sm-12">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Check me out
-                </label>
-              </div>
-            </div>  
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-            <button type="button" class="btn btn-primary">Simpan</button>
-          </div>
+          </form>    
         </div>
       </div>
-    </div>        
+    </div>    
 
-    <div id="modalEdit" class="modal fade" role="dialog">
+    <?php
+                        $no = 1;
+                        if($db->search_by_field('id_user' , $_SESSION['user']) != null) {
+                            foreach($db->search_by_field('id_user' , $_SESSION['user']) as $show) {
+                    ?>
+     
+    <div id="modalEdit-<?php echo $show['id_skills']; ?>" class="modal fade" role="dialog">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <h4 class="modal-title">Edit Skills</h4>
           </div>
+          <form action="action.php?table=skills&action=update" method="post">
           <div class="modal-body">
+             <input type="hidden" name="id_skills" value="<?php echo $show['id_skills'] ?>">
              <div class="form-group">
-                <label>Nama Skills</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukan Nama Skill">
+                <label>Nama Skill</label>
+                <input type="text" class="form-control" name="nama_skills" placeholder="" value="<?php echo $show['nama_skills'] ?>" >
               </div>
 
               <div class="form-group">
-                <label>Nama Tools</label>
-                <input type="text" class="form-control" name="tahun" placeholder="Masukan Nama Tools">
+                <label>Tool Skill</label>
+                <input type="text" class="form-control" name="tool_skills" placeholder="" value="<?php echo $show['tool_skills'] ?>" >
               </div>
+
+              
 
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-            <button type="button" class="btn btn-primary">Simpan</button>
+            <button type="submit," class="btn btn-primary">Simpan</button>
           </div>
+        </form>
         </div>
       </div>
     </div>
 
-    <div id="modalDelete" class="modal modal-danger fade" role="dialog">
+
+    <div id="modalDelete-<?php echo $show['id_skills']; ?>"  class="modal modal-danger fade">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <h4 class="modal-title">Delete Skills</h4>
+              <button type="button" class="Tutup" data-dismiss="modal" aria-label="Tutup"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Delete Skill</h4>
             </div>
-            <div class="modal-body">
-              <p>Apakah kamu ingin menghapus data ini?</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Tutup</button>
-              <button type="button" class="btn btn-outline">YA</button>
-            </div>
+            <form action="action.php?table=skills&action=delete" method="post">
+                <input name="id_skills" type="hidden" value="<?php echo $show['id_skills']; ?>">
+                <div class="modal-body">
+                  <p>Apakah kamu ingin menghapus data ini?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Tutup</button>
+                  <button type="submit" class="btn btn-outline">YA</button>
+                </div>
+           </form>
           </div>
         </div>
       </div>
+<?php 
+                                      }
+                                  }
+                              ?>
 
       </div><!-- /.row -->
     </section>
