@@ -3,6 +3,7 @@
 		var $table	= "personal_sertification";
 		var $dir	= "../../config/database.php";
 
+<<<<<<< HEAD
 		function store ($nama_sertification, $nama_lembaga, $tahun, $upload_file, $id_user) {
 			include $this->dir;
 			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(nama_sertification, nama_lembaga, tahun, upload_file, id_user) VALUES('$nama_sertification', '$nama_lembaga', '$tahun', '$upload_file','$id_user')");
@@ -14,6 +15,17 @@
 		function update ($id_personal_sertification, $nama_sertification, $nama_lembaga, $tahun, $upload_file) {
 			include $this->dir;
 			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET nama_sertification='$nama_sertification', nama_lembaga='$nama_lembaga', tahun='$tahun', upload_file='$upload_file' WHERE id_personal_sertification='$id_personal_sertification'");
+=======
+		function store ($nama_sertification, $nama_lembaga,$tahun,$upload_file, $id_user) {
+			include $this->dir;
+			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(nama_sertification, nama_lembaga, tahun, upload_file, id_user) VALUES('$nama_sertification', '$nama_lembaga','$tahun', 'upload_file' '$id_user')");
+		}
+
+		function update ($id_personal_sertification,$nama_sertification, $nama_lembaga,$tahun,$upload_file) {
+			include $this->dir;
+			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET nama_sertification='$nama_sertification', nama_lembaga='$nama_lembaga', tahun='$tahun', upload_file='upload_file' WHERE id_personal_sertification
+				='$id_personal_sertification'");
+>>>>>>> 14f0fa39250c999aeedb0682752c4efa7e5a399e
 			session_start();
 			if ($data) $_SESSION['message'] = "edit-success";
 			else $_SESSION['message'] = "edit-failed";
@@ -30,14 +42,22 @@
 		function show() {
 			include $this->dir;
 			$data = mysqli_query($connection, "SELECT * FROM " . $this->table);
+<<<<<<< HEAD
 			if(mysqli_num_rows($data) == 0) return null;
+=======
+			//if(mysqli_num_rows($data) == 0 || $data) return null;
+>>>>>>> 14f0fa39250c999aeedb0682752c4efa7e5a399e
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;
 		}
 
 		function search_by_id ($id_personal_sertification) {
 			include $this->dir;
+<<<<<<< HEAD
 			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id_personal_sertification='$id_project_experience'");
+=======
+			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id_personal_sertification='$id_personal_sertification'");
+>>>>>>> 14f0fa39250c999aeedb0682752c4efa7e5a399e
 			if(mysqli_num_rows($data) == 0) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;

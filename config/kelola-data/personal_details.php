@@ -1,27 +1,27 @@
 <?php
-	class prestasiDosen {
-		var $table	= "prestasi_dosen";
+	class personal_sertification {
+		var $table	= "personal_sertification";
 		var $dir	= "../../config/database.php";
-	 
-		function store ($bidang_keahlian, $tingkat, $tahun, $file, $id_user) {
+
+		function store ($nama_sertification, $nama_lembaga, $tahun, $upload_file, $id_user) {
 			include $this->dir;
-			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(bidang_keahlian, tingkat, tahun, file, id_user) VALUES('$bidang_keahlian', '$tingkat', '$tahun', '$file', '$id_user')");
+			$data = mysqli_query($connection, "INSERT INTO " . $this->table . "(nama_sertification, nama_lembaga, tahun, upload_file, id_user) VALUES('$nama_sertification', '$nama_lembaga', '$tahun', '$upload_file','$id_user')");
 			session_start();
 			if ($data) $_SESSION['message'] = "save-success";
 			else $_SESSION['message'] = "save-failed";
 		}
 
-		function update ($id, $bidang_keahlian, $tingkat, $tahun, $file) {
+		function update ($id_personal_sertification, $nama_sertification, $nama_lembaga, $tahun, $deskripsi) {
 			include $this->dir;
-			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET bidang_keahlian='$bidang_keahlian', tingkat='$tingkat', tahun='$tahun', file='$file' WHERE id='$id'");
+			$data = mysqli_query($connection, "UPDATE " . $this->table . " SET nama_sertification='$nama_sertification', nama_lembaga='$nama_lembaga', tahun='$tahun', upload_file='$upload_file' WHERE id_personal_sertification='$id_personal_sertification'");
 			session_start();
 			if ($data) $_SESSION['message'] = "edit-success";
 			else $_SESSION['message'] = "edit-failed";
 		}
 
-		function delete ($id) {
+		function delete ($id_personal_sertification) {
 			include $this->dir;
-			$data = mysqli_query($connection, "DELETE FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "DELETE FROM " . $this->table . " WHERE id_personal_sertification='$id_personal_sertification'");
 			session_start();
 			if ($data) $_SESSION['message'] = "delete-success";
 			else $_SESSION['message'] = "delete-failed";
@@ -35,17 +35,17 @@
 			return $result;
 		}
 
-		function search_by_id ($id) {
+		function search_by_id ($id_personal_sertification) {
 			include $this->dir;
-			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "SELECT * FROM " . $this->table . " WHERE id_personal_sertification='$id_personal_sertification'");
 			if(mysqli_num_rows($data) == 0) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;
 		}
 		
-		function search_field_by_id ($id, $field) {
+		function search_field_by_id ($id_personal_sertification, $field) {
 			include $this->dir;
-			$data = mysqli_query($connection, "SELECT '$field' FROM " . $this->table . " WHERE id='$id'");
+			$data = mysqli_query($connection, "SELECT '$field' FROM " . $this->table . " WHERE id_personal_sertification='$id_personal_sertification'");
 			if(mysqli_num_rows($data) == 0) return null;
 			while($d = mysqli_fetch_array($data)) $result[] = $d;
 			return $result;

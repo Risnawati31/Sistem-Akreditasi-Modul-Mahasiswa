@@ -39,10 +39,14 @@
 				$_SESSION['page'] = "kelola";
 				$_SESSION['subpage'] = "research-outcome";
 				break;
+<<<<<<< HEAD
 			case 'kelola-professional-certification':
+=======
+			case 'kelola-personal-sertification':
+>>>>>>> 14f0fa39250c999aeedb0682752c4efa7e5a399e
 				header('location:pages/kelola-data/personal-sertification.php');
 				$_SESSION['page'] = "kelola";
-				$_SESSION['subpage'] = "professional-certification";
+				$_SESSION['subpage'] = "personal-sertification";
 				break;	
 			case 'kelola-skill-experience':
 				header('location:pages/kelola-data/skill-experience.php');

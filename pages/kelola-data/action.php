@@ -59,21 +59,35 @@
 	 		$do->delete($_POST['id_writing_experience']);
 			header("location:writing-experience.php");
 	 	}
-	} elseif ($table == "penelitian") {
-	 	include $dir . 'penelitian.php';
-		$do = new penelitian();
+	} elseif ($table == "personal_details") {
+	 	include $dir . 'personal_details.php';
+		$do = new personal_details();
 
 	 	if ($action == "store") {
-	 		$do->store($_POST['tema'], $_POST['judul'], $_POST['deskripsi'], $_POST['tanggal'], $_POST['tempat'], $_POST['sumber_pembiayaan'], $_POST['biaya'], $_POST['evaluasi'], $_POST['id_matakuliah'], $_POST['file'], $_POST['id_user']);
-	 		header("location:penelitian.php");
+	 		$do->store($_POST['nim'], $_POST['nama'], $_POST['tempat_lahir'], $_POST['tanggal_lahir'], $_POST['no_hp'], $_POST['email'], $_POST['alamat'], $_POST['status_pernikahan'], $_POST['prodi'], $_POST['angkatan'],$_POST['sosmed'], $_POST['id_user']);
+	 		header("location:personal-details.php");
 	 	} elseif ($action == "update") {
-	 		$do->update($_POST['id'], $_POST['tema'], $_POST['judul'], $_POST['deskripsi'], $_POST['tempat'], $_POST['tanggal'], $_POST['sumber_pembiayaan'], $_POST['biaya'], $_POST['evaluasi'], $_POST['id_matakuliah'], $_POST['file']);
-	 		header("location:penelitian.php");
+	 		$do->update($_POST['id_personal_details'], $_POST['nim'], $_POST['nama'], $_POST['tempat_lahir'], $_POST['tempat_lahir'], $_POST['no_hp'], $_POST['email'], $_POST['alamat'], $_POST['status_pernikahan'], $_POST['prodi'], $_POST['angkatan'], $_POST['sosmed']);
+	 		header("location:personal-details.php");
 	 	} elseif ($action == "delete") {
-	 		$do->delete($_POST['id']);
-			header("location:penelitian.php");
+	 		$do->delete($_POST['id_personal_details']);
+			header("location:personal-details.php");
 	 	}
-	} elseif ($table == "hasil-kerjasama") {
+	}elseif ($table == "skills") {
+	 	include $dir . 'skill-experience.php';
+		$do = new skills();
+
+	 	if ($action == "store") {
+	 		$do->store($_POST['nama_skills'], $_POST['tool_skills'], $_POST['id_user']);
+	 		header("location:skill-experience.php");
+	 	} elseif ($action == "update") {
+	 		$do->update($_POST['id_skills'], $_POST['nama_skills'],$_POST['tool_skills']);
+	 		header("location:skill-experience.php");
+	 	} elseif ($action == "delete") {
+	 		$do->delete($_POST['id_skills']);
+			header("location:skill-experience.php");
+	 	}
+	 }elseif ($table == "hasil-kerjasama") {
 	 	include $dir . 'hasil-kerjasama.php';
 		$do = new hasilKerjasama();
 
@@ -87,7 +101,21 @@
 	 		$do->delete($_POST['id']);
 			header("location:hasil-kerjasama.php");
 	 	}
-	} elseif ($table == "user") {
+	}elseif ($table == "personal_sertification") {
+	 	include $dir . 'personal_sertification.php';
+		$do = new personal_sertification();
+	 	if ($action == "store") {
+	 		$do->store($_POST['nama_sertification'], $_POST['nama_lembaga'],  $_POST['tahun'], $_POST['upload_file'], $_POST['id_user']);
+	 		header("location:personal-sertification.php");
+	 	} elseif ($action == "update") {
+	 		$do->update($_POST['id_personal_sertification'], $_POST['nama_sertification'],$_POST['nama_lembaga'], $_POST['tahun'], $_POST['upload_file'], $_POST['id_user']);
+	 		header("location:personal-sertification.php");
+	 	} elseif ($action == "delete") {
+	 		$do->delete($_POST['id_personal_sertification']);
+			header("location:personal-sertification.php");
+	 	}
+	 }
+	elseif ($table == "user") {
 	 	include $dir . 'user.php';
 		$do = new user();
 
@@ -98,9 +126,10 @@
 	 		$do->update($_POST['id'], $_POST['email'], $_POST['password'], $_POST['level']);
 	 		header("location:user.php");
 	 	} elseif ($action == "delete") {
-	 		$do->delete($_POST['id']);
+	 		$do->delete($_POST['id_user']);
 			header("location:user.php");
 	 	}
+<<<<<<< HEAD
 	} elseif ($table == "skills") {
 	 	include $dir . 'skill-experience.php';
 		$do = new skills();
@@ -116,6 +145,9 @@
 			header("location:skill-experience.php");
 	 	}
 	 }elseif ($table == "research_outcome") {
+=======
+	}elseif ($table == "research_outcome") {
+>>>>>>> 14f0fa39250c999aeedb0682752c4efa7e5a399e
 	 	include $dir . 'research-outcome.php';
 		$do = new research_outcome();
 
@@ -129,6 +161,7 @@
 	 		$do->delete($_POST['id_research_outcome']);
 			header("location:research-outcome.php");
 	 	}
+<<<<<<< HEAD
 	 }elseif ($table == "personal_sertification") {
 	 	include $dir . 'personal_sertification.php';
 		$do = new personal_sertification();
@@ -144,4 +177,8 @@
 			header("location:personal-sertification.php");
 	 	}
 	 }
+=======
+	 }
+
+>>>>>>> 14f0fa39250c999aeedb0682752c4efa7e5a399e
 ?>
